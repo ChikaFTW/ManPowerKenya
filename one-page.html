@@ -2,7 +2,21 @@
 <html lang="en">
 
   <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
 
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -87,6 +101,14 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link external" href="index.html">Multi-page</a>
               </li>
+                           <li class="nav-item">
+              <div class="language-switcher">
+  <select id="language-switcher" class="form-control">
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="ar">العربية</option>
+  </select>
+</div>  
             </ul>
           </div>
         </div>

@@ -2,7 +2,21 @@
 <html lang="en">
 
   <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
 
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -46,7 +60,7 @@ https://templatemo.com/tm-545-finance-business
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+254 703-952-223</a></li>
+              <li><a href="#"><i class="fa fa-phone"  data-i18n="phone_number" ></i></a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -64,7 +78,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Job Hunt</h2></a>
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -87,6 +101,17 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link" href="one-page.html">One Page</a>
               </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      English
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <a class="dropdown-item language-option" href="#" data-lang="en">English</a>
+                      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+                      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+                    </div>
+                </li>
             </ul>
           </div>
         </div>
@@ -99,7 +124,7 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <h1>Contact Us</h1>
-            <span>feel free to send us a message now!</span>
+            <span data-i18n="message_contact_us"  >feel free to send us a message now!</span>
           </div>
         </div>
       </div>

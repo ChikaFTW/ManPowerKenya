@@ -22,7 +22,42 @@
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
-.flex-container a:hover,
+/* RTL Slider Adjustments */
+/* Keep slider functioning in LTR direction */
+[dir="rtl"] .Modern-Slider {
+  direction: ltr; 
+}
+
+/* Make the text content appear aligned for Arabic */
+[dir="rtl"] .Modern-Slider .text-content {
+  text-align: right;  /* RTL text alignment */
+  left: auto;
+  right: 50%;
+  transform: translate(50%, -50%); /* Mirror the original translate */
+}
+
+/* Adjust navigation arrows for RTL */
+[dir="rtl"] .Modern-Slider .PrevArrow {
+  left: auto;
+  right: 30px;
+}
+
+[dir="rtl"] .Modern-Slider .NextArrow {
+  right: auto;
+  left: 30px;
+}
+
+/* Flip the arrow icon */
+[dir="rtl"] .Modern-Slider .NextArrow:before {
+  content: '\f104'; /* ← left arrow */
+}
+
+[dir="rtl"] .Modern-Slider .PrevArrow:before {
+  content: '\f105'; /* → right arrow */
+}
+
+
+ .flex-container a:hover,
 .flex-slider a:hover {
   outline: none;
 }

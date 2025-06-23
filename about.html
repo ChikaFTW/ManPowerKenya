@@ -2,7 +2,22 @@
 <html lang="en">
 
   <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
 
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+</style>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -45,8 +60,8 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
-              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+              <li><a href="#"><i class="fa fa-clock-o" ></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>254 703-952-223</a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -86,6 +101,17 @@ https://templatemo.com/tm-545-finance-business
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="one-page.html">One Page</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                 </a>
+                            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                              <a class="dropdown-item language-option" href="#" data-lang="en">English</a>
+                              <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+                              <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+                            </div>
               </li>
             </ul>
           </div>

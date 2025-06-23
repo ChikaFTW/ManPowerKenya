@@ -3,6 +3,48 @@
 ManPower Kenya
 
 */
+/* Arabic RTL Support */
+/* Apply RTL layout only within the header or navbar area */
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar RTL adjustments */
+[dir="rtl"] .navbar-nav {
+  float: right !important;
+  text-align: right;
+}
+
+[dir="rtl"] .left-info {
+  float: right !important;
+  text-align: right;
+}
+
+[dir="rtl"] .right-icons {
+  float: left !important;
+}
+
+/* Slider adjustments */
+[dir="rtl"] .Modern-Slider {
+  direction: ltr; /* Keep slider mechanics LTR */
+}
+
+[dir="rtl"] .Modern-Slider .text-content {
+  text-align: right;
+}
+
+/* Smooth transitions */
+html {
+  transition: opacity 0.3s ease;
+}
+
+/* Active language highlight */
+.language-option.active {
+  font-weight: bold;
+  color: #a4c639 !important;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -11,6 +53,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -313,6 +356,7 @@ header .navbar {
 .navbar .navbar-toggler-icon {
 	background-image: none;
 }
+
 .navbar .navbar-toggler {
 	border-color: #fff;
 	background-color: #fff;	

@@ -2,13 +2,38 @@
 <html lang="en">
 
   <head>
+<!-- Translations -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+
+<!-- RTL CSS -->
+<style>
+  [dir="rtl"] .navbar-nav, 
+  [dir="rtl"] .left-info {
+    float: right !important;
+    text-align: right;
+  }
+  [dir="rtl"] .right-icons {
+    float: left !important;
+  }
+</style>
+
+<!-- Add this before other scripts -->
+<!-- Add BEFORE other scripts -->
+<script src="assets/translations/translations.js"></script>
+<script src="assets/js/i18n.js" defer></script>
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
     <title>JOB HUNT</title>
 
     <!-- Bootstrap core CSS -->
@@ -28,7 +53,6 @@ https://templatemo.com/tm-545-finance-business
   </head>
 
   <body>
-
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -45,9 +69,9 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
-              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+ 254 703-952-223</a></li>
-              <li><a href="#"><i class="fa fa-map-marker "></i>Republic of Kenya</a></li>
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -64,29 +88,40 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Job Hunt</h2></a>
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#top">Home
+                <a class="nav-link" href="#top"><span data-i18n="home_nav" > Home </span>
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span></a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span></a>
               </li>                          
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="one-page.html">One Page</a>
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
               </li>
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
             </ul>
           </div>
         </div>
@@ -101,11 +136,11 @@ https://templatemo.com/tm-545-finance-business
           <div class="item item-1">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we are ready to help you</h6>
-                  <h4>GUARD SERVICES</h4>
-                  <p>RIGHT PEOPLE IN THE RIGHT PLACE</p>
-                  <a href="services.html" class="filled-button">our services</a>
-                </div>
+                  <h6 data-i18n="welcome">we are ready to help you</h6>
+                   <h4 data-i18n="guard_services">GUARD SERVICES</h4>
+                  <p data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE</p>
+  <a href="services.html" class="filled-button" ><span data-i18n="our_services">our services</span> </a>
+</div>
             </div>
           </div>
           <!-- // Item -->
@@ -113,10 +148,10 @@ https://templatemo.com/tm-545-finance-business
           <div class="item item-2">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we are here to support you</h6>
-                  <h4>SECURITY CONTROL<br>&amp; ROOM OPERATOR</h4>
-                  <p>There may be several duties and responsibilities of security control room operator</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <h6 data-i18n="slider_2_1">we are here to support you</h6>
+                  <h4 data-i18n="slider_2_2" >SECURITY CONTROL<br>&amp; ROOM OPERATOR</h4>
+                  <p data-i18n="slider_2_3" >There may be several duties and responsibilities of security control room operator</p>
+                  <a href="services.html" class="filled-button"> <span data-i18n="slider_2_4"> our services </span></a>
                 </div>
             </div>
           </div>
@@ -125,10 +160,10 @@ https://templatemo.com/tm-545-finance-business
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we are here to keep your house clean</h6>
-                  <h4>HOUSEMAID<br>&amp; Cleaners</h4>
-                  <p>Our Cleaners maintain all facilities</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <h6 data-i18n="slider_3_1" >we are here to keep your house clean</h6>
+                  <h4 data-i18n="slider_3_2" >HOUSEMAID<br>&amp; Cleaners</h4>
+                  <p data-i18n="slider_3_3" >Our Cleaners maintain all facilities</p>
+                  <a href="services.html" class="filled-button"> <span data-i18n="slider_3_4" > our services </span></a>
                 </div>
             </div>
           </div>
@@ -137,10 +172,10 @@ https://templatemo.com/tm-545-finance-business
           <div class="item item-4">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we are ready to take care of you</h6>
-                  <h4>NURSES</h4>
-                  <p>Working in the healthcare industry can be a challenging, but extremely rewarding career.</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <h6 data-i18n="slider_4_1">we are ready to take care of you</h6>
+                  <h4 data-i18n="slider_4_2" >NURSES</h4>
+                  <p data-i18n="slider_4_3">Working in the healthcare industry can be a challenging, but extremely rewarding career.</p>
+                  <a href="services.html" class="filled-button"><span data-i18n="slider_4_4"> our services </span> </a>
                 </div>
             </div>
           </div>
@@ -149,10 +184,10 @@ https://templatemo.com/tm-545-finance-business
           <div class="item item-5">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we provide skilled drivers</h6>
-                  <h4>DRIVERS</h4>
-                  <p>There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills.</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <h6 data-i18n="slider_5_1" >we provide skilled drivers</h6>
+                  <h4 data-i18n="slider_5_2" >DRIVERS</h4>
+                  <p data-i18n="slider_5_3" >There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills.</p>
+                  <a href="services.html" class="filled-button"><span>our services </span> </a>
                 </div>
             </div>
           </div>
@@ -166,11 +201,11 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h4>Request a call back right now ?</h4>
-            <span>We offer the best job opportunities and we are always available for your questions</span>
+            <h4 data-i18n="requestacallbackrightnow" >Request a call back right now ?</h4>
+            <span data-i18n="Weofferthebestjobopportunitiesandweare" >We offer the best job opportunities and we are always available for your questions</span>
           </div>
           <div class="col-md-4">
-            <a href="contact.html" class="border-button">Contact Us</a>
+            <a href="contact.html" class="border-button"><span data-i18n="contact_us_button_body"> Contact Us </span> </a>
           </div>
         </div>
       </div>
@@ -181,17 +216,17 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2> Manpower &amp; Consultancy <em>Services</em></h2>
-              <span>your success partner</span>
+              <h2 data-i18n="manpowerservices"  > Manpower &amp; Consultancy <em>Services</em></h2>
+              <span data-i18n="your_success partner" >your success partner</span>
             </div>
           </div>
           <div class="col-md-4">
             <div class="service-item">
               <img src="assets/images/securityserv.jpg" alt="">
               <div class="down-content">
-                <h4>Security</h4>
-                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                <a href="services.html" class="filled-button">Read More</a>
+                <h4 data-i18n="security_service" >Security</h4>
+                <p data-i18n="security_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
               </div>
             </div>
           </div>
@@ -199,9 +234,9 @@ https://templatemo.com/tm-545-finance-business
             <div class="service-item">
               <img src="assets/images/Housekeeping.jpg" alt="">
               <div class="down-content">
-                <h4>Housekeeping</h4>
-                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                <a href="services.html" class="filled-button">Read More</a>
+                <h4 data-i18n="housekeeping_service" >Housekeeping</h4>
+                <p data-i18n="housekeeping_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <a href="services.html" class="filled-button"> <span data-i18n="housekeeping_service_2" > Read More </span> </a>
               </div>
             </div>
           </div>
@@ -209,9 +244,9 @@ https://templatemo.com/tm-545-finance-business
             <div class="service-item">
               <img src="assets/images/healthcareservice.jpg" alt="">
               <div class="down-content">
-                <h4>Healthcare</h4>
-                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                <a href="services.html" class="filled-button">Read More</a>
+                <h4 data-i18n="healthcare_service" >Healthcare</h4>
+                <p data-i18n="healthcare_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <a href="services.html" class="filled-button"> <span data-i18n="healthcare_service_2" > Read More </span> </a>
               </div>
             </div>
           </div>
@@ -219,9 +254,9 @@ https://templatemo.com/tm-545-finance-business
             <div class="service-item">
               <img src="assets/images/driver1.jpg" alt="">
               <div class="down-content">
-                <h4>Transportation</h4>
-                <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
-                <a href="services.html" class="filled-button">Read More</a>
+                <h4 data-i18n="transportation_service" >Transportation</h4>
+                <p data-i18n="transportation_service_1"  >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <a href="services.html" class="filled-button"> <span data-i18n="transportation_service_3"  > Read More </span> </a>
               </div>
             </div>
           </div>
@@ -437,13 +472,13 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
+            <h4>JOB HUNT</h4>
             <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
             <ul class="social-icons">
               <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              
             </ul>
           </div>
           <div class="col-md-3 footer-item">
