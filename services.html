@@ -16,14 +16,38 @@
   [dir="rtl"] .right-icons {
     float: left !important;
   }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
 </style>
+
+
+<!-- RTL CSS (for Arabic) -->
+<style>
+  [dir="rtl"] .left-info { float: right !important; }
+  [dir="rtl"] .right-icons { float: left !important; }
+</style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>JOB HUNT</title>
 
     <!-- Bootstrap core CSS -->
@@ -33,11 +57,16 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+<!--
 
+Finance Business TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
   </head>
 
   <body>
-
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -54,8 +83,9 @@
         <div class="row">
           <div class="col-md-8 col-xs-12">
             <ul class="left-info">
-              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+              <li ><a href="#"><i class="fa fa-clock-o"></i> <span data-i18n="work_times" >Mon-Fri 09:00-17:00</span></a></li>
+              <li  ><a href="#"><i class="fa fa-phone"></i><span data-i18n="phone_number"> + 254 703-952-223</span></a></li>
+              <li  ><a href="#"><i class="fa fa-map-marker "></i><span data-i18n="base_country">Republic of Kenya</span></a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -63,50 +93,49 @@
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    
+
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>JOB HUNT</h2></a>
+          <a class="navbar-brand" href="index.html"><h2 data-i18n="header_title">Job Hunt</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
+                <a class="nav-link" href="#top"><span data-i18n="home_nav" > Home </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
+                <a class="nav-link" href="about.html"><span data-i18n="about_us_nav">About Us</span></a>
+              </li>  
               <li class="nav-item active">
-                <a class="nav-link" href="services.html">Our Services</a>
-              </li>
+                <a class="nav-link" href="services.html"><span data-i18n="services_nav">Our Services</span> 
+                 <span class="sr-only">(current)</span></a>
+              </li>                          
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="one-page.html">One Page</a>
-              </li>
-                      <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        English
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item language-option" href="#" data-lang="en">English</a>
-                        <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
-                        <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
-                      </div>
-                    </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
+              </li> -->
+              <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+    </div>
+  </li>
             </ul>
           </div>
         </div>
