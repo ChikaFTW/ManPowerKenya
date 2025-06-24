@@ -95,7 +95,7 @@ const translations = {
     "awards_won_body": "Awards Won",
     "who_we_are": "Who we are",
     "who_we_are_1": "Get to know about our company",
-    "who_we_are_2": "JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors. It was established to satisfy the industry's growing needs for manpower recruitment, sourcing and supply. We partner with companies who want to save time, money, and hassles related to Recruitment and Selection.",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors.",
     "news_achievments": "News & Achievements",
     "news_achievments_1": "We already power many companies and clients",
     "request_call_back_form": "Request a call back",
@@ -114,7 +114,81 @@ const translations = {
         "up_footer": "UP",
         
         // Contact Form
-        "send_message_footer": "Send Message"
+        "send_message_footer": "Send Message",
+
+                 //Abbout.html translation
+                 "we_have_over_20_years": "We have over 20 years of experience",
+        
+        // About Us section
+        "who_we_are_about_html": "JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors. It was established to satisfy the industry’s growing needs for manpower recruitment, sourcing and supply. We partner with companies who want to save time, money, and hassles related to Recruitment and Selection.",
+        "who_we_are_about_html_1": "JOB HUNT has a reputation of providing honest, hardworking, disciplined and focused personnel in all fields. This we do by verifying their conduct and character through referrals, certificates from relevant authorities e.g. Kenya Police, former employers, Religious leaders and community. We also work closely with Kenyan Ministry of Foreign Affairs and Youth Affairs.",
+        // Section Header
+        "process_guidance": "Process & Guidance",
+        "process_guidance_1": "Our Strengths are organization and execution",
+
+        // Sourcing & Manpower Pooling
+        "process_guidance_2": "SOURCING & MANPOWER POOLING:",
+        "process_guidance_3": "JOB HUNT maintains a manpower pool of ready-to-leave workers called from private and public employment offices located in key regions of the country. If required, JOB HUNT shall make all the arrangements for the immediate sourcing/identification of the needed workers not identified/available in our existing pool.",
+
+        // Pre-Screening & Shortlisting
+        "process_guidance_pre_screen_1": "PRE-SCREENING & SHORTLISTING:",
+        "process_guidance_pre_screen_2": "Candidates for overseas employment undergo rigorous screening, including psychometric tests to evaluate personality, interests, aptitude, and intellect. In-depth interviews assess job suitability while verifying all credentials. The top 3-4 qualified candidates per position are shortlisted for employer review.",
+
+        // Final Selection
+        "process_guidance_final_1": "FINAL SELECTION:",
+        "process_guidance_final_2": "JOB HUNT can provide our client's representatives with all the facilities and assistance in making their final selection fast and efficient. If so desired, JOB HUNT can do the final selection of their needed workers for and in behalf of our foreign employers with full guarantee on the workers competence and capabilities.",
+        // Skills Testing
+        "process_guidance_skills_1": "SKILLS TRADE TESTING:",
+        "process_guidance_skills_2": "Upon the employer's request, JOB HUNT may arrange for applicants to undergo skill testing designed to check and assess proficiencies required by our principals. These tests are administered by credible and accredited government and private institutions/trade test centers.",
+
+        // Medical Examination
+        "process_guidance_medical_1": "MEDICAL EXAMINATION:",
+        "process_guidance_medical_2": "All selected workers must pass country-specific medical exams conducted with Kenyan government partners (Department of Health, National Employment Authority) and accredited overseas medical facilities. Employers may request official medical reports.",
+
+        // Processing & Documentation
+        "process_guidance_process_document_1": "PROCESSING & DOCUMENTATION:",
+        "process_process_document_2": "JOB HUNT is comprised of competent personnel to process the required documents of selected workers. Our documentation specialists personally monitor and ensure the prompt processing for passports, contracts, travel and exit passes, tax exemptions, visa processing and applications and other related clearances and paperwork.",
+
+        // Pre-Departure Orientation
+        "process_guidance_pre_depart_1": "PRE-DEPARTURE ORIENTATION SEMINAR:",
+        "process_guidance_pre_depart_2": "JOB HUNT conducts intensive pre-departure orientations to prepare workers for the host country's culture, traditions, and job psychological demands.",
+
+        // Orientation List Items
+        "orientation_list_header": "Sessions cover:",
+        "orientation_item1": "• Destination country basics",
+        "orientation_item2": "• Employer's company policies",
+        "orientation_item3": "• Employment terms & conditions",
+        "orientation_item4": "• Job expectations",
+
+        // Ticketing and Send-Off
+        "process_guidance_ticketing_1": "TICKETING and SEND-OFF SERVICES:",
+        "process_guidance_ticketing_2": "Our expert team handles all ticketing (bookings, confirmations) and provides airport assistance. Employers receive worker schedule updates via fax/email/phone before and after Nairobi departures. Required documents travel with workers for on-site formalities.",
+
+      //contac.html
+        "contact_us_title": "Contact Us",
+    "message_contact_us": "feel free to send us a message now!",
+    
+    // Contact Information
+    "phone_title": "Phone",
+    "phone_service": "Our service is available 24/7",
+    "phone_number": "+254 703-952-223",
+    "email_title": "Email",
+    "email_message": "Feel free to reach us",
+    "email_address": "info@jobs-hunt.com",
+    "location_title": "Location",
+    "location_address": "Nairobi, hurlingham Kenya",
+    "view_map": "View on Google Maps",
+    
+    // Contact Form
+    "send_message_title": "Send us a",
+    "send_message_em": "message",
+    "callback_request": "You want one of our managers to reach you?",
+    "full_name_placeholder": "Full Name",
+    "email_placeholder": "E-Mail Address",
+    "subject_placeholder": "Subject",
+    "message_placeholder": "Your Message",
+    "send_button": "Send Message"
+
   },
 
 
@@ -216,7 +290,7 @@ const translations = {
     // Who we are 
     "who_we_are": "Qui nous sommes",
     "who_we_are_1": "Faites connaissance avec notre entreprise",
-    "who_we_are_2": "JOB HUNT RESOURCING Ltd est une société de recrutement entièrement enregistrée et agréée, basée à Nairobi, au Kenya, qui propose des placements d'emplois internationaux et locaux dans tous les secteurs d'activité. Elle a été créée pour répondre aux besoins croissants du secteur en matière de recrutement, d'approvisionnement et de fourniture de main-d'œuvre. Nous collaborons avec des entreprises qui souhaitent gagner du temps, économiser de l'argent et éviter les tracas liés au recrutement et à la sélection.",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd est une société de recrutement entièrement enregistrée et agréée, basée à Nairobi, au Kenya, qui propose des placements d'emplois internationaux et locaux dans tous les secteurs d'activité.",
     
     // News achiev
     "news_achievments": "Actualités & Réalisations",
@@ -237,7 +311,80 @@ const translations = {
         "up_footer": "HAUT",
         
         // Contact Form
-        "send_message_footer": "Envoyer"
+        "send_message_footer": "Envoyer",
+
+        //About.html 
+         "we_have_over_20_years": "Nous avons plus de 20 ans d'expérience",
+        
+        // About Us section
+        "who_we_are_about_html": "JOB HUNT RESOURCING Ltd est une société de recrutement entièrement enregistrée et agréée, basée à Nairobi, au Kenya, qui propose des emplois internationaux et locaux dans tous les secteurs d'activité. Elle a été créée pour répondre aux besoins croissants du secteur en matière de recrutement, d'approvisionnement et de fourniture de main-d'œuvre. Nous collaborons avec des entreprises qui souhaitent gagner du temps, économiser de l'argent et éviter les tracas liés au recrutement et à la sélection.",
+        "who_we_are_about_html_1": "JOB HUNT a la réputation de fournir du personnel honnête, travailleur, discipliné et concentré dans tous les domaines. Pour ce faire, nous vérifions leur conduite et leur caractère par le biais de références, de certificats d'autorités compétentes (par exemple, la police kényane, d'anciens employeurs, des leaders religieux et la communauté). Nous travaillons également en étroite collaboration avec le ministère kenyan des Affaires étrangères et des Affaires de la jeunesse.",
+        // Section Header
+        "process_guidance": "Processus & Orientation",
+        "process_guidance_1": "Nos forces sont l'organisation et l'exécution",
+
+        // Sourcing & Manpower Pooling
+        "process_guidance_2": "SOURCING POOL DE MAIN-D'ŒUVRE:",
+        "process_guidance_3": "JOB HUNT maintient un pool de main-d'œuvre prête à partir, recrutée auprès des bureaux d'emploi privés et publics situés dans les régions clés du pays. Si nécessaire, JOB HUNT fera toutes les démarches pour identifier immédiatement les travailleurs requis qui ne sont pas disponibles dans notre pool existant.",
+
+        // Pre-Screening & Shortlisting
+        "process_guidance_pre_screen_1": "PRÉ-SÉLECTION SHORTLISTING:",
+        "process_guidance_pre_screen_2": "Les candidats à l'emploi à l'étranger subissent un processus rigoureux incluant des tests psychométriques pour évaluer leur personnalité, centres d'intérêt, aptitudes et intellect. Des entretiens approfondis vérifient leur adéquation au poste et authentifient leurs diplômes. Les 3-4 meilleurs candidats par poste sont présélectionnés pour évaluation par l'employeur.",
+
+        // Final Selection
+        "process_guidance_final_1": "SÉLECTION FINALE:",
+        "process_guidance_final_2": "JOB HUNT peut fournir à nos clients toutes les facilités et l'assistance nécessaires pour une sélection finale rapide et efficace. Si souhaité, JOB HUNT peut effectuer la sélection finale des travailleurs requis au nom de nos employeurs étrangers, avec une garantie totale sur leurs compétences et capacités.",
+         // Skills Testing
+        "process_guidance_skills_1": "TESTS DE COMPÉTENCES:",
+        "process_guidance_skills_2": "À la demande de l'employeur, JOB HUNT peut organiser des tests de compétences pour évaluer les aptitudes requises. Ces tests sont administrés par des institutions gouvernementales et centres d'évaluation privés accrédités.",
+
+        // Medical Examination
+        "process_guidance_medical_1": "EXAMEN MÉDICAL:",
+        "process_guidance_medical_2": "Tous les travailleurs sélectionnés doivent passer des examens médicaux spécifiques au pays, organisés avec les autorités kenyanes (Département de la Santé, Autorité Nationale de l'Emploi) et des centres médicaux agréés. Les employeurs peuvent demander les rapports médicaux officiels.",
+
+        // Processing & Documentation
+        "process_guidance_process_document_1": "TRAITEMENT & DOCUMENTATION:",
+        "process_process_document_2": "JOB HUNT dispose de personnel compétent pour traiter les documents requis. Nos spécialistes assurent le traitement rapide des passeports, contrats, laissez-passer, exemptions fiscales, visas et autres formalités administratives.",
+
+        // Pre-Departure Orientation
+        "process_guidance_pre_depart_1": "SÉMINAIRE PRÉ-DÉPART:",
+        "process_guidance_pre_depart_2": "JOB HUNT organise des formations intensives pour préparer les travailleurs à la culture, traditions et exigences psychologiques du pays d'accueil.",
+
+        // Orientation List Items
+        "orientation_list_header": "Sessions couvertes:",
+        "orientation_item1": "• Informations sur le pays de destination",
+        "orientation_item2": "• Politiques de l'entreprise employeuse",
+        "orientation_item3": "• Conditions d'emploi",
+        "orientation_item4": "• Attentes professionnelles",
+
+        // Ticketing and Send-Off
+        "process_guidance_ticketing_1": "BILLETTERIE ET SERVICES D'ACCOMPAGNEMENT:",
+        "process_guidance_ticketing_2": "Notre équipe experte gère toute la billetterie (réservations, confirmations) et fournit une assistance aéroportuaire. Les employeurs reçoivent les mises à jour d'horaire par fax/email/téléphone avant et après le départ de Nairobi. Les documents requis voyagent avec les travailleurs pour les formalités sur site.",
+//contact.html
+        // Header
+    "contact_us_title": "Contactez-nous",
+    "message_contact_us": "n'hésitez pas à nous envoyer un message maintenant!",
+    
+    // Contact Information
+    "phone_title": "Téléphone",
+    "phone_service": "Notre service est disponible 24h/24, 7j/7",
+    "phone_number": "+254 703-952-223",
+    "email_title": "Email",
+    "email_message": "N'hésitez pas à nous contacter",
+    "email_address": "info@jobs-hunt.com",
+    "location_title": "Localisation",
+    "location_address": "Nairobi, hurlingham Kenya",
+    "view_map": "Voir sur Google Maps",
+    
+    // Contact Form
+    "send_message_title": "Envoyez-nous un",
+    "send_message_em": "message",
+    "callback_request": "Vous souhaitez qu'un de nos managers vous contacte?",
+    "full_name_placeholder": "Nom complet",
+    "email_placeholder": "Adresse e-mail",
+    "subject_placeholder": "Sujet",
+    "message_placeholder": "Votre message",
+    "send_button": "Envoyer le message"
     
   },
 
@@ -338,7 +485,7 @@ const translations = {
     "awards_won_body": "الجوائز المحرزة",
     "who_we_are": "من نحن",
     "who_we_are_1": "تعرف على شركتنا",
-    "who_we_are_2": "JOB HUNT RESOURCING Ltd هي شركة توظيف مسجلة بالكامل ومرخصة مقرها في نيروبي، كينيا، وتقدم فرص عمل دولية ومحلية في جميع قطاعات العمل. تم تأسيسها لتلبية الاحتياجات المتزايدة للصناعة في مجال التوظيف، والتوريد، وتوفير القوى العاملة. نتعاون مع الشركات التي ترغب في توفير الوقت والمال وتجنب المتاعب المتعلقة بالتوظيف والاختيار.",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd هي شركة توظيف مسجلة بالكامل ومرخصة مقرها في نيروبي، كينيا، وتقدم فرص عمل دولية ومحلية في جميع قطاعات العمل",
     "news_achievments": "أخبار و إنجازات",
     "news_achievments_1": "نحن ندعم بالفعل العديد من الشركات والعملاء",
     "request_call_back_form": "طلب اتصال",
@@ -357,8 +504,82 @@ const translations = {
         "up_footer": "أعلى",
         
         // Contact Form
-        "send_message_footer": "إرسال"
+        "send_message_footer": "إرسال",
 
+        //about.html 
+         "we_have_over_20_years": "لدينا أكثر من 20 عامًا من الخبرة",
+        
+        // About Us section
+        "who_we_are_about_html": "JOB HUNT RESOURCING Ltd هي شركة توظيف مسجلة بالكامل ومرخصة مقرها في نيروبي، كينيا، وتقدم فرص عمل دولية ومحلية في جميع القطاعات. تأسست لتلبية الاحتياجات المتزايدة للصناعة في مجال التوظيف وتوريد العمالة. نتعاون مع الشركات التي ترغب في توفير الوقت والمال وتجنب المشكلات المتعلقة بالتوظيف والاختيار.",
+        "who_we_are_about_html_1": "يتمتع JOB HUNT بسمعة طيبة في توفير موظفين صادقين، مجتهدين، منضبطين ومركزين في جميع المجالات. نحقق ذلك من خلال التحقق من سلوكهم وشخصياتهم عبر المراجع، والشهادات من الجهات المختصة مثل الشرطة الكينية، وأصحاب العمل السابقين، والقادة الدينيين والمجتمع. كما أننا نعمل بشكل وثيق مع وزارة الخارجية الكينية وشؤون الشباب.",
+        // Section Header
+        "process_guidance": "العملية و الإرشاد",
+        "process_guidance_1": "نقاط قوتنا هي التنظيم والتنفيذ",
+
+        // Sourcing & Manpower Pooling
+        "process_guidance_2": "التوريد و تجميع القوى العاملة:",
+        "process_guidance_3": "تحتفظ JOB HUNT بمجموعة من العمال الجاهزين للسفر، يتم استدعاؤهم من مكاتب التوظيف الخاصة والعامة في المناطق الرئيسية بالبلاد. عند الحاجة، تقوم JOB HUNT بكل الترتيبات اللازمة لتوريد/تحديد العمال المطلوبين غير المتاحين في مجموعتنا الحالية بشكل فوري.",
+
+        // Pre-Screening & Shortlisting
+        "process_guidance_pre_screen_1": "الفرز المبدئي و القائمة المختصرة:",
+        "process_guidance_pre_screen_2": "يخضع العمال المرشحون للعمل بالخارج لعمليات فرز دقيقة وسلسلة من الاختبارات الصارمة مثل الاختبارات النفسية لتقييم الشخصية، الاهتمامات، الميول والقدرات العقلية. يتم تقييم مدى ملاءمتهم للوظيفة عبر مقابلات متعمقة تمنحنا فهمًا أعمق لشخصية المتقدم. تحظى نتائج الفرز والاختبارات بوزن كبير في اختيار العمال المناسبين. يتم التحقق من جميع وثائق المتقدمين بدقة. ثم يتم اختيار ثلاثة (3) أو أربعة (4) مرشحين مؤهلين لكل وظيفة وإحالتهم إلى صاحب العمل لإجراء المقابلات و/ألاختيار النهائي.",
+
+        // Final Selection
+        "process_guidance_final_1": "الاختيار النهائي:",
+        "process_guidance_final_2": "توفر JOB HUNT لعملائنا جميع التسهيلات والمساعدات اللازمة لإجراء الاختيار النهائي بسرعة وكفاءة. إذا رغب العميل، يمكن لـ JOB HUNT القيام بالاختيار النهائي للعمال المطلوبين نيابة عن أصحاب العمل الأجانب مع ضمان كامل لكفاءة وقدرات العمال.",
+        // Skills Testing
+        "process_guidance_skills_1": "اختبارات المهارات المهنية:",
+        "process_guidance_skills_2": "بناءً على طلب صاحب العمل، يمكن لـ JOB HUNT ترتيب اختبارات مهارات مصممة لتقييم الكفاءات المطلوبة. تجرى هذه الاختبارات من قبل مؤسسات حكومية ومراكز اختبار خاصة معتمدة.",
+
+        // Medical Examination
+        "process_guidance_medical_1": "الفحص الطبي:",
+        "process_guidance_medical_2": "يجب على جميع العمال المرشحين اجتياز فحوصات طبية محددة للبلد يتم إجراؤها بالتعاون مع سلطات كينية (وزارة الصحة، الهيئة الوطنية للتوظيف) ومرافق طبية معتمدة. يمكن لأصحاب العمل طلب التقارير الطبية الرسمية.",
+
+        // Processing & Documentation
+        "process_guidance_process_document_1": "المعالجة والوثائق:",
+        "process_process_document_2": "تضم JOB HUNT موظفين مختصين لمعالجة الوثائق المطلوبة. يتولى خبراؤنا متابعة إصدار الجوازات، العقود، تصاريح السفر، الإعفاءات الضريبية، تأشيرات السفر وكافة الإجراءات الورقية الأخرى.",
+
+        // Pre-Departure Orientation
+        "process_guidance_pre_depart_1": "ندوة التوجيه قبل المغادرة:",
+        "process_guidance_pre_depart_2": "تقوم JOB HUNT بتنظيم جلسات توجيهية مكثفة لإعداد العمال لثقافة وتقاليد ومتطلبات العمل النفسية في البلد المضيف.",
+
+        // Orientation List Items
+        "orientation_list_header": "تشمل الجلسات:",
+        "orientation_item1": "•معلومات أساسية عن بلد الوجهة",
+        "orientation_item2": "•سياسات الشركة المستخدِمة",
+        "orientation_item3": "•شروط وأحكام التوظيف",
+        "orientation_item4": "•توقعات العمل",
+
+        // Ticketing and Send-Off
+        "process_guidance_ticketing_1": "خدمات حجز التذاكر والتوديع:",
+        "process_guidance_ticketing_2": "فريقنا الخبير يتولى حجز وتأكيد التذاكر مع تقديم المساعدة في المطار. يتلقى أصحاب العمل تحديثات الجدول الزمني عبر الفاكس/البريد الإلكتروني/الهاتف قبل وبعد المغادرة من نيروبي. يتم إرفاق جميع المستندات المطلوبة مع العمال لإتمام الإجراءات في موقع العمل.",
+        "infos_footer":"معلومات",
+
+        //contact.html
+        // Header
+    "contact_us_title": "اتصل بنا",
+    "message_contact_us": "لا تتردد في إرسال رسالة لنا الآن!",
+    
+    // Contact Information
+    "phone_title": "الهاتف",
+    "phone_service": "خدمتنا متاحة على مدار الساعة",
+    "phone_number": "+254 703-952-223",
+    "email_title": "البريد الإلكتروني",
+    "email_message": "لا تتردد في التواصل معنا",
+    "email_address": "info@jobs-hunt.com",
+    "location_title": "الموقع",
+    "location_address": "نيروبي، هورلينجهام , كينيا",
+    "view_map": "عرض على خرائط جوجل",
+    
+    // Contact Form
+    "send_message_title": "أرسل لنا",
+    "send_message_em": "رسالة",
+    "callback_request": "هل تريد أن يتواصل معك أحد مديرينا؟",
+    "full_name_placeholder": "الاسم الكامل",
+    "email_placeholder": "عنوان البريد الإلكتروني",
+    "subject_placeholder": "الموضوع",
+    "message_placeholder": "رسالتك",
+    "send_button": "إرسال الرسالة"
 
   }
 };
