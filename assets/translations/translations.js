@@ -237,7 +237,7 @@ const translations = {
         "up_footer": "HAUT",
         
         // Contact Form
-        "send_message_footer": "Envoyer le Message"
+        "send_message_footer": "Envoyer"
     
   },
 
