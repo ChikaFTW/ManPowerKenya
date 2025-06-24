@@ -33,23 +33,25 @@ const translations = {
     
     // Security Service
     "security_service": "Security",
-    "security_service_1": "Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.",
+    "security_service_1": "We provide comprehensive security services to protect your assets and personnel to the highest standards.",
     "security_service_2": "Read More",
     
     // Housekeeping Service
     "housekeeping_service": "Housekeeping",
-    "housekeeping_service_1": "Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.",
+    "housekeeping_service_1": "Our qualified team offers complete cleaning services for homes and offices at competitive prices.",
     "housekeeping_service_2": "Read More",
     
     // Healthcare Service
     "healthcare_service": "Healthcare",
-    "healthcare_service_1": "Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.",
+    "healthcare_service_1": "We provide qualified nurses and caregivers to deliver the best home health services.",
     "healthcare_service_2": "Read More",
     
     // Transportation Service
     "transportation_service": "Transportation",
-    "transportation_service_1": "Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.",
+    "transportation_service_1": "Professional drivers with modern vehicles to ensure safe and comfortable travel for all your needs.",
     "transportation_service_3": "Read More",
+
+
     "welcome": "we are ready to help you",
     "guard_services": "GUARD SERVICES",
     "right_people": "RIGHT PEOPLE IN THE RIGHT PLACE",
@@ -77,8 +79,47 @@ const translations = {
     "slider_5_1": "we provide skilled drivers",
     "slider_5_2": "DRIVERS",
     "slider_5_3": "There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills",
-    "slider_5_4": "our services"
+    "slider_5_4": "our services",
+    "time_quality": "TIME & QUALITY",
+    "contract_terms": "CONTRACT & TERMS",
+    "legal_agreement": "LEGAL AGREEMENT",
+    "legal_agreement_1": "Our agreement must be approved signed from both sides with job order letter",
+    "best_teamwork": "BEST TEAMWORK",
+    "best_teamwork_1": "It's all about people! A company is only as good as the people it employs. We hire the best to provide the best services",
+    "contract_terms_button": "Read More",
+    
+    // Stats Section
+    "work_hours_body": "Work Hours",
+    "great_reviews_body": "Great Reviews",
+    "project_done_done": "Projects Done",
+    "awards_won_body": "Awards Won",
+    "who_we_are": "Who we are",
+    "who_we_are_1": "Get to know about our company",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors. It was established to satisfy the industry's growing needs for manpower recruitment, sourcing and supply. We partner with companies who want to save time, money, and hassles related to Recruitment and Selection.",
+    "news_achievments": "News & Achievements",
+    "news_achievments_1": "We already power many companies and clients",
+    "request_call_back_form": "Request a call back",
+    "request_call_back_form_1": "Need any help or you need to say something?",
+    // Footer Thank You Message
+        "thank_you_footer": "THANK YOU, AND WE LOOK FORWARD TO WORKING WITH YOU.",
+        "thank_you_footer1": "info@jobs-hunt.com",
+        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer3": "Nairobi, Hurlingham, Kenya",
+        
+        // Additional Pages
+        "Additional_Pages": "Additional Pages",
+        "about_us_nav": "About Us",
+        "services_nav": "Our Services",
+        "contact_us_nav": "Contact Us",
+        "up_footer": "UP",
+        
+        // Contact Form
+        "send_message_footer": "Send Message"
   },
+
+
+
+
   "fr": {
     "header_title": "Chasseur d'Emploi",
     "welcome": "nous sommes prêts à vous aider",
@@ -93,32 +134,29 @@ const translations = {
     "drivers": "CHAUFFEURS",
     "request_call": "Demander un rappel maintenant?",
     "request_text": "Nous offrons les meilleures opportunités...",
-    "contact_us_nav": "Contactez-Nous",
+    "contact_us": "Contactez-Nous",
     "message_contact_us": "hésitez pas a nous envoyer un message maintenant" ,
     "work_times":"Lun-Ven 09:00-17:00",
     "phone_number":"+ 254 703-952-223",
     "base_country":"République du Kenya",
-  "home_nav": "Accueil",
+    "home_nav": "Accueil",
     "about_us_nav": "À propos",
     "services_nav": "Nos services",
-    "contact_us": "Contactez-nous",
+    "contact_us_nav": "Contactez-nous",
     "onepage_nav": "Page unique",
-   "requestacallbackrightnow": "Demander un rappel maintenant?",
+    "requestacallbackrightnow": "Demander un rappel maintenant?",
     "Weofferthebestjobopportunitiesandweare": "Nous offrons les meilleures opportunités d'emploi et nous sommes toujours disponibles pour vos questions",
     "contact_us_button_body": "Contactez-nous",
     "requestacallbackrightnow": "Demander un rappel maintenant?",
     "Weofferthebestjobopportunitiesandweare": "Nous offrons les meilleures opportunités d'emploi et nous sommes toujours disponibles pour vos questions",
     "contact_us_button_body": "Contactez-nous",
-    
     // Services Section
     "manpowerservices": "Services de main-d'œuvre et de conseil",
     "your_success partner": "votre partenaire de succès",
-    
     // Security Service
     "security_service": "Sécurité",
     "security_service_1": "Nous fournissons des services de sécurité complets pour protéger vos biens et votre personnel selon les normes les plus élevées.",
     "security_service_2": "Lire la suite",
-    
     // Housekeeping Service
     "housekeeping_service": "Ménage",
     "housekeeping_service_1": "Notre équipe qualifiée propose des services de nettoyage complets pour les maisons et les bureaux à des prix compétitifs.",
@@ -160,10 +198,52 @@ const translations = {
     "slider_5_1": "nous fournissons des chauffeurs qualifiés",
     "slider_5_2": "CHAUFFEURS",
     "slider_5_3": "Il y a au moins deux ensembles différents de compétences de conduite qui font un bon chauffeur : compétences techniques et compétences de sécurité",
-    "slider_5_4": "nos services"
+    "slider_5_4": "nos services",
+    "time_quality": "TEMPS & QUALITÉ",
+    "contract_terms": "CONTRAT & CONDITIONS",
+    "legal_agreement": "ACCORD LÉGAL",
+    "legal_agreement_1": "Notre accord doit être approuvé et signé par les deux parties avec une lettre de commande de travail",
+    "best_teamwork": "MEILLEUR TRAVAIL D'ÉQUIPE",
+    "best_teamwork_1": "Tout est une question de personnes ! Une entreprise n'est aussi bonne que les personnes qu'elle emploie. Nous embauchons les meilleurs pour fournir les meilleurs services",
+    "contract_terms_button": "Lire la suite",
     
+    // Stats Section
+    "work_hours_body": "Heures de travail",
+    "great_reviews_body": "Excellent avis",
+    "project_done_done": "Projets réalisés",
+    "awards_won_body": "Prix remportés",
+
+    // Who we are 
+    "who_we_are": "Qui nous sommes",
+    "who_we_are_1": "Faites connaissance avec notre entreprise",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd est une société de recrutement entièrement enregistrée et agréée, basée à Nairobi, au Kenya, qui propose des placements d'emplois internationaux et locaux dans tous les secteurs d'activité. Elle a été créée pour répondre aux besoins croissants du secteur en matière de recrutement, d'approvisionnement et de fourniture de main-d'œuvre. Nous collaborons avec des entreprises qui souhaitent gagner du temps, économiser de l'argent et éviter les tracas liés au recrutement et à la sélection.",
+    
+    // News achiev
+    "news_achievments": "Actualités & Réalisations",
+    "news_achievments_1": "Nous alimentons déjà de nombreuses entreprises et clients",
+    "request_call_back_form": "Demander un rappel",
+    "request_call_back_form_1": "Besoin d'aide ou vous souhaitez nous dire quelque chose ?",
+    // Footer Thank You Message
+        "thank_you_footer": "MERCI, ET NOUS AVONS HÂTE DE TRAVAILLER AVEC VOUS.",
+        "thank_you_footer1": "info@jobs-hunt.com",
+        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer3": "Nairobi, Hurlingham, Kenya",
+        
+        // Additional Pages
+        "Additional_Pages": "Pages Supplémentaires",
+        "about_us_nav": "À Propos de Nous",
+        "services_nav": "Nos Services",
+        "contact_us_nav": "Contactez-Nous",
+        "up_footer": "HAUT",
+        
+        // Contact Form
+        "send_message_footer": "Envoyer le Message"
     
   },
+
+
+
+
   "ar": {
     "header_title": "بحث عن عمل",
     "welcome": "نحن على استعداد لمساعدتك",
@@ -242,6 +322,43 @@ const translations = {
     "slider_5_1": "نوفر سائقين ماهرين",
     "slider_5_2": "سائقون",
     "slider_5_3": "هناك نوعان على الأقل من مهارات القيادة التي تجعل السائق جيدًا: المهارات الفنية ومهارات السلامة",
-    "slider_5_4": "خدماتنا"
+    "slider_5_4": "خدماتنا",
+    "time_quality": "الوقت والجودة",
+    "contract_terms": "العقد والشروط",
+    "legal_agreement": "اتفاق قانوني",
+    "legal_agreement_1": "يجب التوقيع على اتفاقيتنا من كلا الطرفين مع خطاب أمر العمل",
+    "best_teamwork": "أفضل عمل جماعي",
+    "best_teamwork_1": "الأمر كله يتعلق بالأشخاص! الشركة جيدة مثل الأشخاص الذين توظفهم. نوظف الأفضل لتقديم أفضل الخدمات",
+    "contract_terms_button": "اقرأ المزيد",
+    
+    // Stats Section
+    "work_hours_body": "ساعات العمل",
+    "great_reviews_body": "تقييمات رائعة",
+    "project_done_done": "المشاريع المكتملة",
+    "awards_won_body": "الجوائز المحرزة",
+    "who_we_are": "من نحن",
+    "who_we_are_1": "تعرف على شركتنا",
+    "who_we_are_2": "JOB HUNT RESOURCING Ltd هي شركة توظيف مسجلة بالكامل ومرخصة مقرها في نيروبي، كينيا، وتقدم فرص عمل دولية ومحلية في جميع قطاعات العمل. تم تأسيسها لتلبية الاحتياجات المتزايدة للصناعة في مجال التوظيف، والتوريد، وتوفير القوى العاملة. نتعاون مع الشركات التي ترغب في توفير الوقت والمال وتجنب المتاعب المتعلقة بالتوظيف والاختيار.",
+    "news_achievments": "أخبار و إنجازات",
+    "news_achievments_1": "نحن ندعم بالفعل العديد من الشركات والعملاء",
+    "request_call_back_form": "طلب اتصال",
+    "request_call_back_form_1": "هل تحتاج إلى مساعدة أو تريد أن تقول شيئاً؟",
+    // Footer Thank You Message
+        "thank_you_footer": "شكراً لكم، ونحن نتطلع للعمل معكم.",
+        "thank_you_footer1": "info@jobs-hunt.com",
+        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer3": "نيروبي، هورلينجهام، كينيا",
+        
+        // Additional Pages
+        "Additional_Pages": "صفحات إضافية",
+        "about_us_nav": "من نحن",
+        "services_nav": "خدماتنا",
+        "contact_us_nav": "اتصل بنا",
+        "up_footer": "أعلى",
+        
+        // Contact Form
+        "send_message_footer": "إرسال"
+
+
   }
 };

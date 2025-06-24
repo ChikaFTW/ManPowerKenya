@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initLanguageSwitchers();
 });
 
+
+
 // Core function to handle language changes
 function applyLanguage(lang) {
   // 1. Validate language
@@ -16,6 +18,10 @@ function applyLanguage(lang) {
   
   // 3. Update all translations
   updateTextContent(lang);
+  // 3. Force layout recalculation (critical fix!)
+  document.body.style.display = 'none';
+  void document.body.offsetHeight; // trigger reflow
+  document.body.style.display = '';
   
   // 4. Update UI elements
   updateLanguageSwitcher(lang);
@@ -75,3 +81,4 @@ function handleSliderTransition() {
     document.documentElement.style.opacity = 1;
   }, 100);
 }
+

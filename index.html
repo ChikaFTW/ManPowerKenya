@@ -16,12 +16,26 @@
   [dir="rtl"] .right-icons {
     float: left !important;
   }
+  /* Ensure Owl Carousel displays correctly in RTL */
+
+[dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr !important;
+}
+
+
 </style>
 
-<!-- Add this before other scripts -->
-<!-- Add BEFORE other scripts -->
-<script src="assets/translations/translations.js"></script>
-<script src="assets/js/i18n.js" defer></script>
 
 <!-- RTL CSS (for Arabic) -->
 <style>
@@ -108,7 +122,7 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"><span data-i18n="contact_us_nav" >Contact Us</span></a>
               </li>
-               <!-- <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
               </li> -->
               <li class="nav-item dropdown">
@@ -138,7 +152,7 @@ https://templatemo.com/tm-545-finance-business
                 <div class="text-content">
                   <h6 data-i18n="welcome">we are ready to help you</h6>
                    <h4 data-i18n="guard_services">GUARD SERVICES</h4>
-                  <p data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE</p>
+                  <p> <span  data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE </span>  </p>
   <a href="services.html" class="filled-button" ><span data-i18n="our_services">our services</span> </a>
 </div>
             </div>
@@ -205,7 +219,7 @@ https://templatemo.com/tm-545-finance-business
             <span data-i18n="Weofferthebestjobopportunitiesandweare" >We offer the best job opportunities and we are always available for your questions</span>
           </div>
           <div class="col-md-4">
-            <a href="contact.html" class="border-button"><span data-i18n="contact_us_button_body"> Contact Us </span> </a>
+            <a href="contact.html" class="border-button"  data-i18n="contact_us_button_body"> Contact Us  </a>
           </div>
         </div>
       </div>
@@ -225,7 +239,7 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/securityserv.jpg" alt="">
               <div class="down-content">
                 <h4 data-i18n="security_service" >Security</h4>
-                <p data-i18n="security_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <p data-i18n="security_service_1" >We provide comprehensive security services to protect your assets and personnel to the highest standards.</p>
                 <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
               </div>
             </div>
@@ -235,7 +249,7 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/Housekeeping.jpg" alt="">
               <div class="down-content">
                 <h4 data-i18n="housekeeping_service" >Housekeeping</h4>
-                <p data-i18n="housekeeping_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <p data-i18n="housekeeping_service_1" >Our qualified team offers complete cleaning services for homes and offices at competitive prices.</p>
                 <a href="services.html" class="filled-button"> <span data-i18n="housekeeping_service_2" > Read More </span> </a>
               </div>
             </div>
@@ -245,7 +259,7 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/healthcareservice.jpg" alt="">
               <div class="down-content">
                 <h4 data-i18n="healthcare_service" >Healthcare</h4>
-                <p data-i18n="healthcare_service_1" >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <p data-i18n="healthcare_service_1" >We provide qualified nurses and caregivers to deliver the best home health services.</p>
                 <a href="services.html" class="filled-button"> <span data-i18n="healthcare_service_2" > Read More </span> </a>
               </div>
             </div>
@@ -255,7 +269,7 @@ https://templatemo.com/tm-545-finance-business
               <img src="assets/images/driver1.jpg" alt="">
               <div class="down-content">
                 <h4 data-i18n="transportation_service" >Transportation</h4>
-                <p data-i18n="transportation_service_1"  >Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                <p data-i18n="transportation_service_1"  >Professional drivers with modern vehicles to ensure safe and comfortable travel for all your needs.</p>
                 <a href="services.html" class="filled-button"> <span data-i18n="transportation_service_3"  > Read More </span> </a>
               </div>
             </div>
@@ -269,37 +283,40 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-6">
             <div class="left-content">
-              <span>Lorem ipsum dolor sit amet</span>
-              <h2>Our solutions for your <em>business growth</em></h2>
-              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
-              <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
-              <a href="" class="filled-button">Read More</a>
+              
+              <span data-i18n="time_quality" >TIME & QUALITY</span>
+              <h2  data-i18n="contract_terms" >CONTRACT <em> &amp; </em> TERMS</h2>
+              <span data-i18n="legal_agreement" > <em> LEGAL AGREEMENT </em> </span> 
+              <p data-i18n="legal_agreement_1" >Our agreement must be approved singed from both sides with job order letter</p>
+              <span data-i18n="best_teamwork"> <em> BEST TEAMWORK </em> </span> 
+              <p data-i18n="best_teamwork_1" >It’s all about people! A company is only as good as the people it employs. We hire the best to provie the best services</p>
+              <a href="contact.html" class="filled-button" data-i18n="contact_us_button_body" > Contact us </a>
             </div>
           </div>
           <div class="col-md-6 align-self-center">
             <div class="row">
               <div class="col-md-6">
                 <div class="count-area-content">
-                  <div class="count-digit">945</div>
-                  <div class="count-title">Work Hours</div>
+                  <div class="count-digit"> 84 </div>
+                  <div class="count-title" data-i18n="work_hours_body"  >Work Hours</div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="count-area-content">
-                  <div class="count-digit">1280</div>
-                  <div class="count-title">Great Reviews</div>
+                  <div class="count-digit">3700</div>
+                  <div class="count-title" data-i18n="great_reviews_body" >Great Reviews</div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="count-area-content">
-                  <div class="count-digit">578</div>
-                  <div class="count-title">Projects Done</div>
+                  <div class="count-digit">2152</div>
+                  <div class="count-title" data-i18n="project_done_done">Projects Done</div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="count-area-content">
-                  <div class="count-digit">26</div>
-                  <div class="count-title">Awards Won</div>
+                  <div class="count-digit">7</div>
+                  <div class="count-title" data-i18n="awards_won_body" >Awards Won</div>
                 </div>
               </div>
             </div>
@@ -316,15 +333,16 @@ https://templatemo.com/tm-545-finance-business
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="assets/images/more-info.jpg" alt="">
+                    <img src="assets/images/logoJH.jpg" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
                   <div class="right-content">
-                    <span>Who we are</span>
-                    <h2>Get to know about <em>our company</em></h2>
-                    <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus<br><br>Praes end at dictum metus. Morbi id hendrerit lectus, nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt</p>
-                    <a href="#" class="filled-button">Read More</a>
+                    <span data-i18n="who_we_are" >Who we are</span>
+                    <h2 data-i18n="who_we_are_1" >Get to know about <em>our company</em></h2>
+                    <p data-i18n="who_we_are_2" > JOB HUNT RESOURCING Ltd is a fully registered and licensed recruitment company based in Nairobi, Kenya that offers International and Local job placements in all job sectors. It was established to satisfy the industry’s growing needs for manpower recruitment, sourcing and supply. We partner with companies who want to save time, money,and hassles related to Recruitment and Selection.
+ </p>
+                    <a href="about.html" class="filled-button" data-i18n="contract_terms_button" > Read More </a>
                   </div>
                 </div>
               </div>
@@ -335,22 +353,24 @@ https://templatemo.com/tm-545-finance-business
     </div>
 
     <div class="testimonials">
-      <div class="container">
+       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>What they say <em>about us</em></h2>
-              <span>testimonials from our greatest clients</span>
+              <h2 data-i18n="news_achievments" >News &amp; <em> Achievements </em></h2>
+              <span data-i18n="news_achievments_1" > We already power many companies and clients </span>
             </div>
           </div>
+          <!--
           <div class="col-md-12">
             <div class="owl-testimonials owl-carousel">
               
               <div class="testimonial-item">
                 <div class="inner-content">
+                
                   <h4>George Walker</h4>
                   <span>Chief Financial Analyst</span>
-                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                  <p> "Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
@@ -385,16 +405,36 @@ https://templatemo.com/tm-545-finance-business
             </div>
           </div>
         </div>
-      </div>
+      </div> -->  
+    
+     <div class="gallery-wrapper">
+  <div class="gallery-track" id="gallery-track">
+    <!-- Repeat image set twice for smooth loop -->
+    <img src="assets/images/driver1.jpg" alt="Image 1">
+    <img src="assets/images/sec2.jpg" alt="Image 2">
+    <img src="assets/images/sec1.jpg" alt="Image 3">
+    <img src="assets/images/securityserv.jpg" alt="Image 4">
+
+    <!-- Repeat to ensure infinite loop effect -->
+    <img src="assets/images/driver1.jpg" alt="Image 1 clone">
+    <img src="assets/images/sec2.jpg" alt="Image 2 clone">
+    <img src="assets/images/sec1.jpg" alt="Image 3 clone">
+    <img src="assets/images/securityserv.jpg" alt="Image 4">
+
+  </div>
+</div>
     </div>
+</div>
+</div>
+   
 
     <div class="callback-form">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Request a <em>call back</em></h2>
-              <span>Etiam suscipit ante a odio consequat</span>
+              <h2 data-i18n="request_call_back_form" >Request a <em>call back</em></h2>
+              <span data-i18n="request_call_back_form_1">Need any help or you need to say something ?</span>
             </div>
           </div>
           <div class="col-md-12">
@@ -441,64 +481,66 @@ https://templatemo.com/tm-545-finance-business
             <div class="owl-partners owl-carousel">
             
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="1" alt="1">
+                <img src="assets/images/256px-Flag_of_Saudi_Arabia.svg.png" title="Saudi Arabia" alt="1">
+                <p><em> Saudi Arabia </em></p>
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="2" alt="2">
+                <img src="assets/images/256px-Flag_of_Qatar.svg.png" title="Qatar" alt="2">
+                <p><em> Qatar</em></p>
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="3" alt="3">
+                <img src="assets/images/Flag_of_Dubai.svg.png" title="Dubai" alt="3">
+                <p><em> Dubai </em></p>
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="4" alt="4">
+                <img src="assets/images/256px-Flag_of_Kuwait.svg (1).png" title="Kuwait" alt="4">
+                <p><em> Kuwait </em></p>
               </div>
               
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="5" alt="5">
-              </div>
               
             </div>
           </div>
         </div>
       </div>
     </div>
-
+</div>
 
     <!-- Footer Starts Here -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>JOB HUNT</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
-            <ul class="social-icons">
-              <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <h4 data-i18n="header_title">JOB HUNT</h4>
+            <p data-i18n="thank_you_footer" > THANK YOU, AND
+WE LOOK
+FORWARD TO
+WORKING WITH YOU. </p>
+           <!--  <ul class="social-icons">
+              <li><a rel="nofollow" href="https://fb.com/google" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
               
             </ul>
+            -->
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
+            <h4>INFOS</h4>
             <ul class="menu-list">
-              <li><a href="#">Vivamus ut tellus mi</a></li>
-              <li><a href="#">Nulla nec cursus elit</a></li>
-              <li><a href="#">Vulputate sed nec</a></li>
-              <li><a href="#">Cursus augue hasellus</a></li>
-              <li><a href="#">Lacinia ac sapien</a></li>
+              <li><a href="#" data-i18n="thank_you_footer1"  >info@jobs -hunt. com</a></li>
+              <li><a href="#" data-i18n="thank_you_footer2"  >00254 703 952223</a></li>
+              <li><a href="#" data-i18n="thank_you_footer3"  >Nairobi, hurlingham, Kenya</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Additional Pages</h4>
+            <h4 data-i18n="thank_you_footer"  >Additional Pages</h4>
             <ul class="menu-list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">How We Work</a></li>
-              <li><a href="#">Quick Support</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="about.html" data-i18n="about_us_nav"  >About Us</a></li>
+              <li><a href="services.html" data-i18n="services_nav"  >Our Services</a></li>
+              <li><a href="contact.html" data-i18n="contact_us_nav" >Contact Us</a></li>
+              <li><a href="#top" data-i18n="up_footer" >UP</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item last-item">
@@ -523,7 +565,7 @@ https://templatemo.com/tm-545-finance-business
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <button type="submit" id="form-submit" class="filled-button" data-i18n="send_message_footer">Send Message</button>
                     </fieldset>
                   </div>
                 </div>
@@ -538,9 +580,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            <p>Copyright &copy; 2025 JB HUNT Co.,Ltd.
           </div>
         </div>
       </div>

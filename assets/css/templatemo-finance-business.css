@@ -6,6 +6,11 @@ ManPower Kenya
 /* Arabic RTL Support */
 /* Apply RTL layout only within the header or navbar area */
 /* RTL Support */
+/* Make Owl work in RTL */
+/* Ensure Owl Carousel displays correctly in RTL */
+
+
+
 [dir="rtl"] {
   direction: rtl;
   font-family: 'Arial', sans-serif;
@@ -33,6 +38,46 @@ ManPower Kenya
 
 [dir="rtl"] .Modern-Slider .text-content {
   text-align: right;
+}
+
+.gallery-wrapper {
+      overflow: hidden;
+      width: 100%;
+      background: #fff;
+      padding: 20px 0;
+    }
+
+    .gallery-track {
+      display: flex;
+      width: fit-content;
+      animation: scrollGallery 17s linear infinite;
+    }
+
+	[dir="rtl"] .gallery-track {
+  animation: scrollGalleryRtl 17s linear infinite;
+}
+
+    .gallery-track img {
+      width: 400px;
+      height: 290px;
+      object-fit: cover;
+      margin: 0 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-track img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scrollGallery {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+	@keyframes scrollGalleryRtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
 }
 
 /* Smooth transitions */
@@ -87,7 +132,7 @@ a.filled-button {
 
 a.filled-button:hover {
 	background-color: #fff;
-	color: #a4c639;
+	color: #002B45;
 }
 
 a.border-button {
@@ -808,7 +853,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form {
-	background-color: #a4c639;
+	background-color: #002B45;
 	padding: 60px;
 	border-radius: 5px;
 	text-align: center;
@@ -888,7 +933,7 @@ ul.slick-dots {
 }
 
 .contact-us .contact-form button.filled-button {
-	background-color: #a4c639;
+	background-color: #002B45;
 	color: #fff;
 	border: none;
 	font-size: 13px;
@@ -906,7 +951,7 @@ ul.slick-dots {
 
 .contact-us .contact-form button.filled-button:hover {
 	background-color: #fff;
-	color: #a4c639;
+	color: #002B45;
 }
 
 
@@ -1059,7 +1104,7 @@ footer .contact-form ::placeholder {
 footer .contact-form button.filled-button {
 	background-color: transparent;
 	color: #fff;
-	background-color: #a4c639;
+	background-color: #002B45;
 	border: none;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -1076,7 +1121,7 @@ footer .contact-form button.filled-button {
 
 footer .contact-form button.filled-button:hover {
 	background-color: #fff;
-	color: #a4c639;
+	color: #002B45;
 }
 
 

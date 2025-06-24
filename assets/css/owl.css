@@ -6,6 +6,23 @@
 /*
  *  Owl Carousel - Core
  */
+/* Force LTR direction for the slider even inside RTL layout */
+[dir="rtl"] .owl-partners {
+  direction: ltr ;
+}
+
+ [dir="rtl"] .owl-carousel .owl-item {
+  float: right;
+}
+
+[dir="rtl"] .owl-partners {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+
 .owl-carousel {
   display: none;
   width: 100%;

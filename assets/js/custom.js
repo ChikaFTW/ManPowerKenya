@@ -61,37 +61,10 @@ jQuery( document ).ready(function( $ ) {
                 }
             });
         }
-        if ($('.owl-partners').length) {
-            $('.owl-partners').owlCarousel({
-                loop: true,
-                nav: false,
-                dots: true,
-                items: 1,
-                margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0
-                    },
-                    460: {
-                        items: 1,
-                        margin: 0
-                    },
-                    576: {
-                        items: 2,
-                        margin: 20
-                    },
-                    992: {
-                        items: 4,
-                        margin: 30
-                    }
-                }
-            });
-        }
 
+
+
+        
         $(".Modern-Slider").slick({
             autoplay:true,
             autoplaySpeed:10000,
@@ -141,5 +114,28 @@ jQuery( document ).ready(function( $ ) {
         });
         }
     })
+    if ($('.owl-partners').length) {
+  setTimeout(() => {
+    $('.owl-partners').owlCarousel({
+      rtl: false, // ❌ force it off, regardless of page dir
+      loop: true,
+      nav: false,
+      dots: false,
+      margin: 15,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      smartSpeed: 700,
+      responsive: {
+        0: { items: 2, margin: 0 },
+        600: { items: 3, margin: 10 },
+        1000: { items: 5, margin: 15 }
+      }
+    });
+  }, 300);
+}
+
  
 });
+
+
+
