@@ -102,7 +102,7 @@ const translations = {
     // Footer Thank You Message
         "thank_you_footer": "THANK YOU, AND WE LOOK FORWARD TO WORKING WITH YOU.",
         "thank_you_footer1": "info@jobs-hunt.com",
-        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer2": "+254 703-952-223",
         "thank_you_footer3": "Nairobi, Hurlingham, Kenya",
         
         // Additional Pages
@@ -300,7 +300,7 @@ const translations = {
     // Footer Thank You Message
         "thank_you_footer": "MERCI, ET NOUS AVONS HÂTE DE TRAVAILLER AVEC VOUS.",
         "thank_you_footer1": "info@jobs-hunt.com",
-        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer2": "+254 703-952-223",
         "thank_you_footer3": "Nairobi, Hurlingham, Kenya",
         
         // Additional Pages
@@ -409,7 +409,7 @@ const translations = {
     "contact_us": "اتصل بنا",
     "message_contact_us": "لا تتردد في إرسال رسالة لنا الآن" ,
     "work_times": "من الإثنين إلى الجمعة 09:00-17:00",
-    "phone_number":" 703-952-223 254 +", 
+    "phone_number":"703-952-223 254 +", 
     "base_country":"جمهورية كينيا",
      "home_nav": "الرئيسية",
     "about_us_nav": "من نحن",
@@ -494,7 +494,7 @@ const translations = {
     // Footer Thank You Message
         "thank_you_footer": "شكراً لكم، ونحن نتطلع للعمل معكم.",
         "thank_you_footer1": "info@jobs-hunt.com",
-        "thank_you_footer2": "+254 703 952223",
+        "thank_you_footer2": "703-952-223 254 +",
         "thank_you_footer3": "نيروبي، هورلينجهام، كينيا",
         
         // Additional Pages
@@ -564,7 +564,7 @@ const translations = {
     // Contact Information
     "phone_title": "الهاتف",
     "phone_service": "خدمتنا متاحة على مدار الساعة",
-    "phone_number": "+254 703-952-223",
+    "phone_number": "703-952-223 254 +",
     "email_title": "البريد الإلكتروني",
     "email_message": "لا تتردد في التواصل معنا",
     "email_address": "info@jobs-hunt.com",
