@@ -38,7 +38,7 @@ function updateTextContent(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang]?.[key]) {
-      el.textContent = translations[lang][key];
+     el.innerHTML = translations[lang][key];
     } else {
       console.warn(`Missing translation: ${key} for ${lang}`);
     }

@@ -16,13 +16,12 @@ const translations = {
     "contact_us": "Contact Us",
     "message_contact_us": "feel free to send us a message now",
     "work_times":"Mon-Fri 09:00-17:00",
-    "phone_number": "",
-    "base_country": "",
-    "home_nav":"",
-    "about_us_nav":"",
-    "services_nav":"",
-    "contact_us":"",
-    "onepage_nav":"",
+    "phone_number": "+ 254 703-952-223",
+    "base_country": "Republic of Kenya",
+    "home_nav":"INFOS",
+    "about_us_nav":"About Us",
+    "services_nav":"Our Services",
+    "contact_us":"Contact Us",
     "requestacallbackrightnow": "Request a call back right now?",
     "Weofferthebestjobopportunitiesandweare": "We offer the best job opportunities and we are always available for your questions",
     "contact_us_button_body": "Contact Us",
@@ -187,7 +186,8 @@ const translations = {
     "email_placeholder": "E-Mail Address",
     "subject_placeholder": "Subject",
     "message_placeholder": "Your Message",
-    "send_button": "Send Message"
+    "send_button": "Send Message",
+    "infos_footer":"Infos"
 
   },
 
@@ -384,7 +384,8 @@ const translations = {
     "email_placeholder": "Adresse e-mail",
     "subject_placeholder": "Sujet",
     "message_placeholder": "Votre message",
-    "send_button": "Envoyer le message"
+    "send_button": "Envoyer le message",
+    "infos_footer":"Infos"
     
   },
 
