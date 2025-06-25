@@ -18,7 +18,7 @@ const translations = {
     "work_times":"Mon-Fri 09:00-17:00",
     "phone_number": "+ 254 703-952-223",
     "base_country": "Republic of Kenya",
-    "home_nav":"INFOS",
+    "home_nav":"Home",
     "about_us_nav":"About Us",
     "services_nav":"Our Services",
     "contact_us":"Contact Us",
@@ -187,7 +187,60 @@ const translations = {
     "subject_placeholder": "Subject",
     "message_placeholder": "Your Message",
     "send_button": "Send Message",
-    "infos_footer":"Infos"
+    "infos_footer":"Infos",
+    // Header
+    "services_title": "Our Services",
+    "services_subtitle": "We offer the best job opportunities",
+
+    // Tabs
+    "security_tab": "Security",
+    "housekeeping_tab": "Housekeeping",
+    "healthcare_tab": "Healthcare",
+    "transportation_tab": "Transportation",
+
+    // Security Section
+    "security_title": "Security",
+    "security_desc": "We know from experience that providing the best security is about having the right people for each specific job environment. At radar, we meet the needs of every job by using our strategic staffing model. This means that we determine the specific mix of skills and attributes needed for each position, so you can feel confident knowing you are getting the best person for the job. Radar offers a variety of guard services as a way to customize a security solution that fits your unique environment and budget.",
+    "security_desc2": "We believe in providing our clients with excellent customer service along with a specialised security service. We allocate a dedicated client manager who is wholly responsible for ensuring the highest level of service delivery is provided to your site. They will conduct regular meetings with your team to ensure you are receiving the full benefit of trusting us to secure your site and how we can help you further.",
+
+    // Housekeeping Section
+    "housemaid_title": "HOUSEMAID",
+    "housemaid_desc": "JOB HUNT RESOURCING COMPANY is equip with well trained and competent recruitment officers,marketing staff and interviewers that conduct Special Recruitment Activities (SRAs), Job Fairs and Interviews in different provinces and regions of the KENYA to look for workers and/or applicants that are highly skilled, experienced, and has a good working attitude and personal character for our foreign principals and/or clients we provide housemaids with:",
+    "housemaid_li1": "• Excellent/Fluent written and spoken English",
+    "housemaid_li2": "• Trained and qualified from government school",
+    "housemaid_li3": "• Skilled with thinking on their feet",
+    "housemaid_li4": "• Keep calm under pressure",
+    "housemaid_li5": "• Posses a responsible and mature nature",
+    "housemaid_li6": "• Qualified in all house cleaning tasks and follow the weekly or daily work plan",
+    "cleaners_title": "CLEANERS",
+    "cleaners_desc": "Our Cleaners maintain all facilities by keeping the company premises clean and well-organized. They also monitor materials stored in their area and respond to visitors' inquiries about where they can get certain things done:",
+    "cleaners_li1": "• A Cleaner is responsible for all basic cleaning in and around the facility or office building. This can entail dusting, mopping, sweeping, vacuuming, and cleaning smudges off windows and doors. Ensuring restrooms are cleaned, sanitized, and restocked.",
+
+    // Healthcare Section
+    "nurses_title": "NURSES",
+    "nurses_desc": "Working in the healthcare industry can be a challenging, but extremely rewarding career. for that we provide the height human skills in addition to professional skills , we provide the best Kenyan experienced nurses with:",
+    "nurses_li1": "• Excellent/Fluent written and spoken English",
+    "nurses_li2": "• Urgent care and emergency care",
+    "nurses_li3": "• Checking and monitoring vital signs",
+    "nurses_li4": "• Customer service and safety as their key morals",
+    "nurses_li5": "• Patient and family education",
+    "nurses_li6": "• Keep calm under pressure",
+    "nurses_li7": "• Technology skills",
+    "nurses_li8": "• Qualified in operating computer systems",
+    "nurses_li9": "• Critical thinking and problem solving",
+
+    // Transportation Section
+    "drivers_title": "Drivers",
+    "drivers_desc": "There are at least two different sets of driving skills that make someone a good driver: technical skills and safety skills. Technical skills include steering, reflexes, smooth braking and acceleration, ability to judge distances, and other measures of the driver's ability. Our Drivers possess the following skills:",
+    "drivers_li1": "• Excellent/Fluent written and spoken English",
+    "drivers_li2": "• One of the most important qualities of a good driver is that he or she should be skilled enough to handle any situation on the road",
+    "drivers_li3": "• Knowledge",
+    "drivers_li4": "• Self Discipline",
+    "drivers_li5": "• Patience",
+    "drivers_li6": "• Alertness",
+    "drivers_li7": "• Mechanical Skills",
+    "drivers_li8": "• Responsible",
+    "drivers_li9": "• Experienced",
 
   },
 
@@ -385,7 +438,62 @@ const translations = {
     "subject_placeholder": "Sujet",
     "message_placeholder": "Votre message",
     "send_button": "Envoyer le message",
-    "infos_footer":"Infos"
+    "infos_footer":"Infos",
+
+    //service.html
+    // Header
+    "services_title": "Nos Services",
+    "services_subtitle": "Nous offrons les meilleures opportunités d'emploi",
+
+    // Tabs
+    "security_tab": "Sécurité",
+    "housekeeping_tab": "Entretien ménager",
+    "healthcare_tab": "Santé",
+    "transportation_tab": "Transport",
+
+    // Security Section
+    "security_title": "Sécurité",
+    "security_desc": "Notre expérience nous a appris que la meilleure sécurité repose sur des personnes adaptées à chaque environnement de travail spécifique. Chez Radar, nous répondons aux besoins de chaque emploi grâce à notre modèle de recrutement stratégique. Cela signifie que nous déterminons le mélange spécifique de compétences et d'attributs nécessaires pour chaque poste, afin que vous puissiez être sûr d'obtenir la meilleure personne pour le travail. Radar propose une variété de services de gardiennage pour personnaliser une solution de sécurité adaptée à votre environnement unique et à votre budget.",
+    "security_desc2": "Nous croyons en la fourniture d'un excellent service client ainsi que d'un service de sécurité spécialisé. Nous attribuons un gestionnaire de client dédié qui est entièrement responsable de garantir le plus haut niveau de service sur votre site. Ils organiseront des réunions régulières avec votre équipe pour s'assurer que vous tirez pleinement profit de notre confiance pour sécuriser votre site et voir comment nous pouvons vous aider davantage.",
+
+    // Housekeeping Section
+    "housemaid_title": "FEMME DE MÉNAGE",
+    "housemaid_desc": "JOB HUNT RESOURCING COMPANY dispose d'officiers de recrutement bien formés et compétents, de personnel marketing et d'intervieweurs qui mènent des activités de recrutement spéciales (SRA), des salons de l'emploi et des entretiens dans différentes provinces et régions du KENYA pour rechercher des travailleurs et/ou candidats hautement qualifiés, expérimentés, avec une bonne attitude de travail et un caractère personnel pour nos clients étrangers. Nous fournissons des femmes de ménage avec :",
+    "housemaid_li1": "• Anglais écrit et parlé excellent/courant",
+    "housemaid_li2": "• Formées et qualifiées dans des écoles gouvernementales",
+    "housemaid_li3": "• Compétentes pour penser rapidement",
+    "housemaid_li4": "• Capables de garder leur calme sous pression",
+    "housemaid_li5": "• Ayant un caractère responsable et mature",
+    "housemaid_li6": "• Qualifiées pour toutes les tâches de nettoyage et capables de suivre un plan de travail hebdomadaire ou quotidien",
+    "cleaners_title": "NETTOYEURS",
+    "cleaners_desc": "Nos nettoyeurs entretiennent toutes les installations en gardant les locaux de l'entreprise propres et bien organisés. Ils surveillent également les matériaux stockés dans leur zone et répondent aux demandes des visiteurs sur l'emplacement de certains services :",
+    "cleaners_li1": "• Un nettoyeur est responsable de tout le nettoyage de base dans et autour des installations ou du bâtiment de bureaux. Cela peut inclure l'époussetage, le balayage, l'aspiration et le nettoyage des traces sur les fenêtres et les portes. Il s'assure que les toilettes sont nettoyées, désinfectées et réapprovisionnées.",
+
+    // Healthcare Section
+    "nurses_title": "INFIRMIÈRES",
+    "nurses_desc": "Travailler dans le secteur de la santé peut être une carrière exigeante mais extrêmement gratifiante. C'est pourquoi nous fournissons des compétences humaines exceptionnelles en plus des compétences professionnelles. Nous proposons les meilleures infirmières expérimentées kényanes avec :",
+    "nurses_li1": "• Anglais écrit et parlé excellent/courant",
+    "nurses_li2": "• Soins urgents et soins d'urgence",
+    "nurses_li3": "• Vérification et surveillance des signes vitaux",
+    "nurses_li4": "• Service client et sécurité comme valeurs clés",
+    "nurses_li5": "• Éducation des patients et des familles",
+    "nurses_li6": "• Capacité à garder son calme sous pression",
+    "nurses_li7": "• Compétences technologiques",
+    "nurses_li8": "• Qualifiées dans l'utilisation des systèmes informatiques",
+    "nurses_li9": "• Esprit critique et résolution de problèmes",
+
+    // Transportation Section
+    "drivers_title": "Chauffeurs",
+    "drivers_desc": "Il existe au moins deux ensembles de compétences de conduite qui font un bon chauffeur : les compétences techniques et les compétences de sécurité. Les compétences techniques incluent la direction, les réflexes, le freinage et l'accélération en douceur, la capacité à juger les distances et d'autres mesures de la capacité du conducteur. Nos chauffeurs possèdent les compétences suivantes :",
+    "drivers_li1": "• Anglais écrit et parlé excellent/courant",
+    "drivers_li2": "• L'une des qualités les plus importantes d'un bon chauffeur est qu'il doit être suffisamment compétent pour gérer n'importe quelle situation sur la route",
+    "drivers_li3": "• Connaissance",
+    "drivers_li4": "• Autodiscipline",
+    "drivers_li5": "• Patience",
+    "drivers_li6": "• Vigilance",
+    "drivers_li7": "• Compétences mécaniques",
+    "drivers_li8": "• Responsabilité",
+    "drivers_li9": "• Expérience"
     
   },
 
@@ -580,7 +688,62 @@ const translations = {
     "email_placeholder": "عنوان البريد الإلكتروني",
     "subject_placeholder": "الموضوع",
     "message_placeholder": "رسالتك",
-    "send_button": "إرسال الرسالة"
+    "send_button": "إرسال",
+    
+    //service.html
+    // Header
+    "services_title": "خدماتنا",
+    "services_subtitle": "نحن نقدم أفضل فرص العمل",
+
+    // Tabs
+    "security_tab": "الأمن",
+    "housekeeping_tab": "خدمات المنزل",
+    "healthcare_tab": "الرعاية الصحية",
+    "transportation_tab": "النقل",
+
+    // Security Section
+    "security_title": "الأمن",
+    "security_desc": "نحن نعلم من الخبرة أن توفير أفضل أمن يتعلق بوجود الأشخاص المناسبين لكل بيئة عمل محددة. في رادار، نلبي احتياجات كل وظيفة باستخدام نموذج التوظيف الاستراتيجي الخاص بنا. هذا يعني أننا نحدد المزيج المحدد من المهارات والصفات المطلوبة لكل منصب، حتى تشعر بالثقة في أنك تحصل على أفضل شخص للوظيفة. تقدم رادار مجموعة متنوعة من خدمات الحراسة كطريقة لتخصيص حل أمني يناسب بيئتك الفريدة وميزانيتك.",
+    "security_desc2": "نحن نؤمن بتقديم خدمة عملاء ممتازة لعملائنا جنبًا إلى جنب مع خدمة أمنية متخصصة. نخصص مدير عميل مخصص يكون مسؤولاً بالكامل عن ضمان تقديم أعلى مستوى من الخدمة لموقعك. سيعقد اجتماعات منتظمة مع فريقك لضمان حصولك على الفائدة الكاملة من ثقتك بنا لتأمين موقعك وكيف يمكننا مساعدتك أكثر.",
+
+    // Housekeeping Section
+    "housemaid_title": "خادمة منزل",
+    "housemaid_desc": "شركة JOB HUNT RESOURCING COMPANY مجهزة بضباط توظيف مدربين تدريباً جيداً وكفؤين، وموظفي تسويق ومقابلات يجريون أنشطة توظيف خاصة (SRAs)، ومعارض وظائف ومقابلات في مقاطعات ومناطق مختلفة من كينيا للبحث عن عمال و/أو متقدمين ذوي مهارات عالية، خبرة، وموقف عمل جيد وشخصية جيدة لعملائنا الأجانب. نحن نقدم خادمات منزل مع:",
+    "housemaid_li1": "• إنجليزية ممتازة/طلاقة في الكتابة والتحدث",
+    "housemaid_li2": "• مدربات ومؤهلات من مدارس حكومية",
+    "housemaid_li3": "• ماهرات في التفكير على أقدامهن",
+    "housemaid_li4": "• يحافظن على الهدوء تحت الضغط",
+    "housemaid_li5": "• يتمتعن بطبيعة مسؤولة وناضجة",
+    "housemaid_li6": "• مؤهلات في جميع مهام تنظيف المنزل وتتبع خطة العمل الأسبوعية أو اليومية",
+    "cleaners_title": "عمال النظافة",
+    "cleaners_desc": "يحافظ عمال النظافة لدينا على جميع المرافق من خلال الحفاظ على مباني الشركة نظيفة ومنظمة جيدًا. كما يراقبون المواد المخزنة في منطقتهم ويجيبون على استفسارات الزوار حول مكان الحصول على أشياء معينة:",
+    "cleaners_li1": "• عامل النظافة مسؤول عن جميع أعمال التنظيف الأساسية داخل المرفق أو مبنى المكاتب وحوله. يمكن أن يشمل ذلك إزالة الغبار، المسح، الكنس، التنظيف بالمكنسة الكهربائية وتنظيف البقع على النوافذ والأبواب. التأكد من أن دورات المياه نظيفة ومعقمة ومزودة باحتياجاتها.",
+
+    // Healthcare Section
+    "nurses_title": "ممرضات",
+    "nurses_desc": "يمكن أن يكون العمل في صناعة الرعاية الصحية أمرًا صعبًا ولكنه مجزي للغاية. لذلك نوفر مهارات بشرية عالية بالإضافة إلى المهارات المهنية، نحن نوفر أفضل الممرضات الكينيات ذوات الخبرة مع:",
+    "nurses_li1": "• إنجليزية ممتازة/طلاقة في الكتابة والتحدث",
+    "nurses_li2": "• رعاية عاجلة ورعاية طوارئ",
+    "nurses_li3": "• فحص ومراقبة العلامات الحيوية",
+    "nurses_li4": "• خدمة العملاء والسلامة كقيم أساسية",
+    "nurses_li5": "• تثقيف المرضى والعائلات",
+    "nurses_li6": "• الحفاظ على الهدوء تحت الضغط",
+    "nurses_li7": "• مهارات تكنولوجية",
+    "nurses_li8": "• مؤهلات في تشغيل أنظمة الكمبيوتر",
+    "nurses_li9": "• التفكير النقدي وحل المشكلات",
+
+    // Transportation Section
+    "drivers_title": "سائقون",
+    "drivers_desc": "هناك مجموعتان على الأقل من مهارات القيادة التي تجعل شخصًا ما سائقًا جيدًا: المهارات التقنية ومهارات السلامة. تشمل المهارات التقنية التوجيه، ردود الفعل، الكبح والتسارع السلس، القدرة على تقدير المسافات، وغيرها من مقاييس قدرة السائق. سائقونا لديهم المهارات التالية:",
+    "drivers_li1": "• إنجليزية ممتازة/طلاقة في الكتابة والتحدث",
+    "drivers_li2": "• واحدة من أهم صفات السائق الجيد هي أنه يجب أن يكون ماهرًا بما يكفي للتعامل مع أي موقف على الطريق",
+    "drivers_li3": "• المعرفة",
+    "drivers_li4": "• الانضباط الذاتي",
+    "drivers_li5": "• الصبر",
+    "drivers_li6": "• اليقظة",
+    "drivers_li7": "• المهارات الميكانيكية",
+    "drivers_li8": "• المسؤولية",
+    "drivers_li9": "• الخبرة"
 
   }
 };
