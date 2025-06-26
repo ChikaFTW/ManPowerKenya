@@ -40,6 +40,146 @@ ManPower Kenya
   text-align: right;
 }
 
+[dir="rtl"] .Modern-Slider .text-content p {
+  direction: rtl;
+  text-align: right;
+  display: inline-block;
+  color: white;
+  padding: 8px 16px;
+  margin-right: 0;
+  margin-left: auto; /* Push it to the right */
+}
+
+/* Checking the new rtl adjustements*/
+[dir="rtl"] .service-item .down-content h4,
+[dir="rtl"] .service-item .down-content p {
+  text-align: right;
+}
+
+[dir="rtl"] .fun-facts .left-content,
+[dir="rtl"] .fun-facts span,
+[dir="rtl"] .fun-facts h2,
+[dir="rtl"] .fun-facts p {
+  text-align: right;
+}
+
+
+[dir="rtl"] .more-info .right-content,
+[dir="rtl"] .more-info .right-content span,
+[dir="rtl"] .more-info .right-content h2,
+[dir="rtl"] .more-info .right-content p {
+  text-align: right;
+}
+
+/* footer  */
+/* RTL: Footer adjustments */
+[dir="rtl"] footer {
+  text-align: right;
+}
+
+[dir="rtl"] footer .footer-item {
+  text-align: right;
+}
+
+[dir="rtl"] footer .footer-item h4 {
+  text-align: right;
+}
+
+[dir="rtl"] footer .footer-item p {
+  text-align: right;
+}
+
+[dir="rtl"] footer .menu-list li a {
+  text-align: right;
+  display: block;
+  direction: rtl;
+}
+/* end footer*/
+
+/* about.html*/
+[dir="rtl"] .team-item .down-content h4,
+[dir="rtl"] .team-item .down-content p{
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL: Orientation list in team section */
+[dir="rtl"] .orientation-list {
+  text-align: right;
+  direction: rtl;
+  padding-right: 20px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+[dir="rtl"] .orientation-list li {
+  text-align: right;
+  direction: rtl;
+}
+
+/*services . html */
+/* RTL: Tabs Section */
+[dir="rtl"] .single-services {
+  text-align: right;
+}
+
+[dir="rtl"] #tabs {
+  direction: rtl;
+}
+
+/* Flip the tab list to the right */
+[dir="rtl"] #tabs > .col-md-4 {
+  order: 2;
+  text-align: right;
+}
+
+[dir="rtl"] #tabs > .col-md-8 {
+  order: 1;
+}
+
+/* Tab links */
+[dir="rtl"] #tabs ul {
+  padding-right: 0;
+  padding-left: 0;
+  list-style-position: inside;
+  text-align: right;
+}
+
+[dir="rtl"] #tabs ul li {
+  text-align: right;
+}
+
+[dir="rtl"] #tabs ul li a {
+  direction: rtl;
+  text-align: right;
+  display: block;
+}
+
+/* Tabs content */
+[dir="rtl"] .tabs-content article {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .tabs-content h4,
+[dir="rtl"] .tabs-content p {
+  text-align: right;
+}
+
+[dir="rtl"] .tabs-content ul {
+  padding-right: 20px;
+  padding-left: 0;
+  direction: rtl;
+  list-style-position: inside;
+}
+
+[dir="rtl"] .tabs-content ul li {
+  text-align: right;
+}
+
+
+
+
 .gallery-wrapper {
       overflow: hidden;
       width: 100%;
@@ -1216,7 +1356,7 @@ footer .contact-form button.filled-button:hover {
 .single-services {
 	margin-top: 140px;
 }
-
+/*
 #tabs ul {
   margin: 0;
   padding: 0;
@@ -1257,6 +1397,61 @@ footer .contact-form button.filled-button:hover {
 #tabs ul .ui-tabs-active span {
   color: #1e1e1e;
 }
+*/
+
+/* Fancy style for service tab list */
+#tabs .tab-links {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#tabs .tab-links li {
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+#tabs .tab-links li:last-child {
+  border-bottom: none;
+}
+
+#tabs .tab-links li a {
+  display: block;
+  padding: 18px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #002B45;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#tabs .tab-links li a:hover,
+#tabs .tab-links li a:focus,
+#tabs .tab-links .ui-tabs-active a {
+  background-color: #f5f9ff;
+  color: #a4c639;
+  padding-left: 30px;
+}
+
+/* RTL tab navigation only */
+[dir="rtl"] #tabs .tab-links li a {
+  text-align: right;
+  padding-right: 25px;
+  padding-left: 20px;
+}
+
+[dir="rtl"] #tabs .tab-links li a:hover,
+[dir="rtl"] #tabs .tab-links .ui-tabs-active a {
+  padding-right: 30px;
+}
+
+
+/* tabs */
+
+
 .tabs-content {
 	margin-left: 30px;
   text-align: left;
