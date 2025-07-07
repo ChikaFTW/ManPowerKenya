@@ -705,7 +705,7 @@ header .navbar {
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(../images/clean1.jpg);
+	background-image: url(../images/Housemai.jpeg);
 }
 
 .Modern-Slider .item-4 .img-fill {
@@ -873,6 +873,10 @@ ul.slick-dots {
 .service-item img {
 	width: 100%;
 	overflow: hidden;
+  aspect-ratio: 16 / 9; /* Automatically handles height based on width */
+  object-fit: cover;    /* Keeps the image nicely cropped */
+  border-radius: 8px;
+	
 }
 
 .service-item .down-content {
@@ -1188,7 +1192,7 @@ ul.slick-dots {
 .partners {
 	margin-top: 140px;
 	background-color: #f7f7f7;
-	padding: 60px 0px;
+	padding: 60px 0px; 
 }
 
 .partners .owl-item {
@@ -1197,11 +1201,14 @@ ul.slick-dots {
 }
 
 .partners .partner-item img {
-	max-width: 156px;
+	max-width: 177px;
+	height: 100px;
 	margin: auto;
 }
 
-
+.partner-item:hover{
+	scale: 1.07;
+}
 
 /* Footer Style */
 
@@ -1544,6 +1551,54 @@ footer .contact-form button.filled-button:hover {
 .tabs-content img {
 	max-width: 100%;
 	overflow: hidden;
+  height: 450px; /* You can adjust this value as needed */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.tabs-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Small mobile phones (portrait, ≤ 480px) */
+@media (max-width: 480px) {
+  .tabs-content img {
+    height: 150px;
+  }
+}
+
+/* Medium phones & small tablets (≤ 576px) */
+@media (max-width: 576px) {
+  .tabs-content img {
+    height: 170px;
+  }
+}
+
+/* Tablets (portrait, ≤ 768px) */
+@media (max-width: 768px) {
+  .tabs-content img {
+    height: 180px;
+  }
+}
+
+/* Tablets landscape & small laptops (≤ 992px) */
+@media (max-width: 992px) {
+  .tabs-content img {
+    height: 420px;
+  }
+}
+
+/* Larger screens (≥ 1200px) */
+@media (min-width: 1200px) {
+  .tabs-content img {
+    height: 450px;
+  }
 }
 .tabs-content h4 {
 	font-size: 20px;

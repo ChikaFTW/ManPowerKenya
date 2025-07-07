@@ -314,3 +314,12 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+
+.flexslider .slides {
+  cursor: grab;
+}
+
+.flexslider .slides:active {
+  cursor: grabbing;
+}
+

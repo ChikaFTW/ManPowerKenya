@@ -242,7 +242,72 @@ const translations = {
     "drivers_li8": "• Responsible",
     "drivers_li9": "• Experienced",
 
+     "Waiters_services_title": "Waiters & Waitresses",
+    "Waiters_services": "We provide highly trained and customer-oriented waitresses ready to serve in hotels, restaurants, resorts, and catering events worldwide.",
+    "barista_service": "Barista",
+    "barista_service_1": "Our baristas are passionate about coffee and customer service. Carefully selected by JOB HUNT, they are trained to create a memorable experience in cafes, hotels, and specialty coffee shops.",
+    "nurse_service": "Nurses",
+    "nurse_service_1": "We supply qualified nurses who are dedicated, compassionate, and globally prepared to work in hospitals, elderly care homes, private homes, and health institutions.",
+    "nail_service": "Nail Technicians",
+    "nail_service_1": "JOB HUNT supplies nail technicians who are creative, detail-oriented, and certified in beauty and wellness care. Our technicians are equipped to work in salons, spas, and personal care services abroad.",
+    "hair_service": "Hair Salon Worker",
+    "hair_service_1": "Our hair salon workers include hairstylists, assistants, and beauty care professionals capable of working in salons, hotels, and wellness centers.",
+    "massage_service": "Massage Worker",
+    "massage_service_1": "We deliver massage therapists with formal training and a gentle, professional approach. They are ready to work in spas, wellness clinics, resorts, and healthcare settings abroad.",
+    "security_service_2": "Read More",
+    // Waiters
+    "waiter_title": "Waiters & Waitresses",
+    "waiter_desc": "JOB HUNT RESOURCING COMPANY provides highly trained and customer-oriented waitresses ready to serve in hotels, restaurants, resorts, and catering events worldwide. We select candidates with the right balance of hospitality, communication skills, and efficiency to ensure top-level service. Our waitresses are:",
+    "waiter_li1": "• Skilled in taking and delivering food & beverage orders accurately",
+    "waiter_li2": "• Friendly, polite, and fluent in English",
+    "waiter_li3": "• Trained in handling customer complaints and feedback professionally",
+    "waiter_li4": "• Neat in appearance and follow hygiene standards",
+    "waiter_li5": "• Able to multitask and work under pressure",
+
+    // Barista
+    "barista_title": "Barista",
+    "barista_desc": "Our baristas are passionate about coffee and customer service. Carefully selected by JOB HUNT, they are trained to create a memorable experience in cafes, hotels, and specialty coffee shops. We provide baristas who:",
+    "barista_li1": "• Are experts in preparing a wide range of coffee and espresso drinks",
+    "barista_li2": "• Understand coffee bean varieties and brewing techniques",
+    "barista_li3": "• Maintain cleanliness and organization in their stations",
+    "barista_li4": "• Have a friendly and engaging customer approach",
+    "barista_li5": "• Are trained in POS systems and order handling",
+
+    // Nail
+    "NAIL_title": "Nail Technicians",
+    "NAIL_desc": "JOB HUNT supplies nail technicians who are creative, detail-oriented, and certified in beauty and wellness care. Our technicians are equipped to work in salons, spas, and personal care services abroad. We provide nail technicians with:",
+    "NAIL_li1": "• Professional training in manicure, pedicure, nail art & gel application",
+    "NAIL_li2": "• Strong knowledge of hygiene and sanitation standards",
+    "NAIL_li3": "• Good communication and customer handling skills",
+    "NAIL_li4": "• Patience and precision in nail care and styling",
+    "NAIL_li5": "• Up-to-date knowledge of trends and tools",
+
+    // Hair
+    "HAIR_title": "Hair Salon Worker",
+    "HAIR_desc": "Our hair salon workers include hairstylists, assistants, and beauty care professionals capable of working in salons, hotels, and wellness centers. JOB HUNT ensures they meet international grooming and styling standards. We provide candidates who:",
+    "HAIR_li1": "• Are skilled in cutting, styling, coloring, and treating hair",
+    "HAIR_li2": "• Understand diverse hair types and cultural preferences",
+    "HAIR_li3": "• Maintain clean and well-organized workstations",
+    "HAIR_li4": "• Are courteous, attentive, and fluent in English",
+    "HAIR_li5": "• Have certification from government or private beauty schools",
+
+    // Massage
+    "MASSAGE": "Massage Worker",
+    "beauty_desc": "JOB HUNT delivers massage therapists with formal training and a gentle, professional approach. They are ready to work in spas, wellness clinics, resorts, and healthcare settings abroad. Our massage workers:",
+    "MASSAGE_li1": "• Are trained in different techniques (Swedish, deep tissue, reflexology, etc.)",
+    "MASSAGE_li2": "• Understand anatomy and pressure point therapy",
+    "MASSAGE_li3": "• Maintain confidentiality and professionalism",
+    "MASSAGE_li4": "• Create a calm and relaxing environment for clients",
+    "MASSAGE_li5": "• Are certified and uphold hygiene and safety standards",
+    "resto_tab": "Restaurant & Coffee Staff",
+    "Beauty_tab": "Beauty & Wellness Services",
+    
+
   },
+
+
+
+
 
 
 
@@ -493,9 +558,71 @@ const translations = {
     "drivers_li6": "• Vigilance",
     "drivers_li7": "• Compétences mécaniques",
     "drivers_li8": "• Responsabilité",
-    "drivers_li9": "• Expérience"
+    "drivers_li9": "• Expérience",
+
+    // services added services
+    "Waiters_services_title": "Serveurs & Serveuses",
+     "Waiters_services": "Nous fournissons des serveuses hautement qualifiées et orientées vers le client, prêtes à travailler dans des hôtels, restaurants, centres de villégiature et événements de restauration à travers le monde.",
+    "barista_service": "Barista",
+    "barista_service_1": "Nos baristas sont passionnés de café et de service client. Sélectionnés avec soin par JOB HUNT, ils sont formés pour offrir une expérience mémorable dans les cafés, hôtels et coffee shops spécialisés.",
+    "nurse_service": "Infirmières",
+    "nurse_service_1": "Nous fournissons des infirmières qualifiées, dévouées, compatissantes et prêtes à travailler dans les hôpitaux, maisons de retraite, domiciles privés et établissements de santé à l'international.",
+    "nail_service": "Techniciennes des Ongles",
+    "nail_service_1": "JOB HUNT fournit des techniciennes des ongles créatives, minutieuses et certifiées en soins de beauté et bien-être. Nos candidates sont prêtes à travailler dans des salons, spas et services de soins à la personne à l'étranger.",
+    "hair_service": "Travailleuse Salon de Coiffure",
+    "hair_service_1": "Nos travailleurs en salon de coiffure comprennent des coiffeurs, assistants et professionnels de beauté capables de travailler dans des salons, hôtels et centres de bien-être.",
+    "massage_service": "Massothérapeute",
+    "massage_service_1": "Nous fournissons des massothérapeutes avec une formation formelle et une approche professionnelle. Prêts à travailler dans des spas, cliniques de bien-être, centres de villégiature et établissements de santé.",
+    "security_service_2": "Lire la suite",
+    "waiter_title": "Serveurs & Serveuses",
+    "waiter_desc": "JOB HUNT RESOURCING COMPANY fournit des serveuses qualifiées, orientées client, prêtes à travailler dans des hôtels, restaurants, centres de villégiature et événements. Nous sélectionnons des candidates équilibrées entre hospitalité, communication et efficacité. Nos serveuses sont :",
+    "waiter_li1": "• Compétentes pour prendre et servir les commandes avec précision",
+    "waiter_li2": "• Sympathiques, polies, et parlant couramment anglais",
+    "waiter_li3": "• Formées à la gestion des réclamations clients",
+    "waiter_li4": "• Présentables et respectant les normes d’hygiène",
+    "waiter_li5": "• Capables de travailler sous pression et de gérer plusieurs tâches",
+
+    // Barista
+    "barista_title": "Barista",
+    "barista_desc": "Nos baristas sont passionnés par le café et le service client. Sélectionnés avec soin par JOB HUNT, ils sont formés pour offrir une expérience mémorable dans les cafés, hôtels et coffee shops. Nous fournissons des baristas qui :",
+    "barista_li1": "• Maîtrisent une grande variété de boissons à base de café",
+    "barista_li2": "• Connaissent les types de grains et les techniques d'infusion",
+    "barista_li3": "• Gardent leur poste propre et organisé",
+    "barista_li4": "• Ont une approche client conviviale et engageante",
+    "barista_li5": "• Sont formés à l’utilisation de caisses et commandes",
+
+    // Nail
+    "NAIL_title": "• Techniciennes des Ongles",
+    "NAIL_desc": "• JOB HUNT fournit des techniciennes créatives et certifiées pour les soins beauté et bien-être. Elles sont prêtes à travailler dans les salons, spas et services de soins à l’étranger. Nous fournissons :",
+    "NAIL_li1": "• Formation professionnelle en manucure, pédicure, nail art & gel",
+    "NAIL_li2": "• Bonne connaissance des normes d’hygiène",
+    "NAIL_li3": "• Bonnes compétences en communication avec la clientèle",
+    "NAIL_li4": "• Précises, patientes et méticuleuses",
+    "NAIL_li5": "• À jour avec les tendances et outils",
+
+    // Hair
+    "HAIR_title": "Travailleuse en Salon de Coiffure",
+    "HAIR_desc": "Nos travailleurs en salon comprennent coiffeurs, assistants et professionnels de beauté prêts à travailler à l’international. JOB HUNT garantit leur conformité aux normes. Nous fournissons :",
+    "HAIR_li1": "• Compétents en coupe, coiffure, coloration et soins capillaires",
+    "HAIR_li2": "• Connaissent différents types de cheveux et préférences culturelles",
+    "HAIR_li3": "• Maintiennent des espaces de travail propres",
+    "HAIR_li4": "• Sont polis, attentifs et parlent anglais",
+    "HAIR_li5": "• Diplômés d’écoles de beauté agréées",
+
+    // Massage
+    "MASSAGE": "Massothérapeute",
+    "beauty_desc": "JOB HUNT propose des massothérapeutes formés, professionnels et doux. Prêts à exercer dans les spas, centres de bien-être et établissements de santé. Nos thérapeutes :",
+    "MASSAGE_li1": "• Maîtrisent plusieurs techniques (suédois, tissus profonds, réflexologie...)",
+    "MASSAGE_li2": "• Connaissent l’anatomie et les points de pression",
+    "MASSAGE_li3": "• Travaillent en toute confidentialité",
+    "MASSAGE_li4": "• Créent une ambiance calme et détendue",
+    "MASSAGE_li5": "• Certifiés et respectent les normes d’hygiène",
+     "resto_tab": "Personnel de Restaurant & Café",
+    "Beauty_tab": "Services de Beauté et Bien-être",
     
   },
+
+
 
 
 
@@ -743,7 +870,67 @@ const translations = {
     "drivers_li6": "• اليقظة",
     "drivers_li7": "• المهارات الميكانيكية",
     "drivers_li8": "• المسؤولية",
-    "drivers_li9": "• الخبرة"
+    "drivers_li9": "• الخبرة" ,
+
+    "Waiters_services_title": "نُدُل و نادلات",
+    "Waiters_services": "نحن نوفر نادلات مدربات تدريبًا عاليًا ويتمتعن بمهارات خدمة العملاء للعمل في الفنادق والمطاعم والمنتجعات والفعاليات حول العالم.",
+    "barista_service": "باريستا",
+    "barista_service_1": "باريستاتنا شغوفون بالقهوة وخدمة العملاء. تم اختيارهم بعناية من قبل JOB HUNT وتم تدريبهم لتقديم تجربة مميزة في المقاهي والفنادق ومحلات القهوة المتخصصة.",
+    "nurse_service": "ممرضات",
+    "nurse_service_1": "نقوم بتوفير ممرضات مؤهلات يتمتعن بالتفاني والرحمة ومستعدات للعمل في المستشفيات، ودور رعاية المسنين، والمنازل الخاصة، والمؤسسات الصحية على مستوى العالم.",
+    "nail_service": "فنيات الأظافر",
+    "nail_service_1": "توفر JOB HUNT فنيات أظافر مبدعات ودقيقات وذوات شهادات معتمدة في العناية بالجمال. مستعدات للعمل في الصالونات والمنتجعات الصحية وخدمات الرعاية الشخصية بالخارج.",
+    "hair_service": "عاملة صالون شعر",
+    "hair_service_1": "يضم طاقمنا من العاملين في صالونات الشعر مصففي شعر ومساعدين ومحترفي تجميل مؤهلين للعمل في الصالونات والفنادق ومراكز العناية.",
+    "massage_service": "أخصائي تدليك",
+    "massage_service_1": "نحن نقدم أخصائيي تدليك مدربين بشكل احترافي وبنهج لطيف ومهني. جاهزون للعمل في المنتجعات ومراكز الصحة والعيادات حول العالم.",
+    "security_service_2": "اقرأ المزيد",
+    // Waiters
+    "waiter_title": "النُدُل و النادلات",
+    "waiter_desc": "تقدم شركة JOB HUNT موظفات خدمة مدربات بشكل احترافي ومؤهلات لتقديم أفضل الخدمات في الفنادق والمطاعم والمنتجعات والفعاليات. نختار الموظفات بناءً على مهارات التواصل وحسن التعامل والكفاءة. خادماتنا يتمتعن بـ:",
+    "waiter_li1": "• القدرة على أخذ وتقديم الطلبات بدقة",
+    "waiter_li2": "• لطيفات، مهذبات ويتحدثن الإنجليزية بطلاقة",
+    "waiter_li3": "• مدربات على التعامل مع شكاوى العملاء",
+    "waiter_li4": "• أنيقات ويُحافظن على النظافة الشخصية",
+    "waiter_li5": "• قادرات على أداء مهام متعددة وتحت الضغط",
+
+    // Barista
+    "barista_title": "باريستا",
+    "barista_desc": "باريستاتنا شغوفون بالقهوة وخدمة العملاء. تم اختيارهم بعناية من قبل JOB HUNT وتدريبهم لتقديم تجربة ممتازة في المقاهي والفنادق. نحن نوفر باريستات يتمتعون بـ:",
+    "barista_li1": "• خبرة في إعداد مشروبات القهوة والإسبريسو",
+    "barista_li2": "• معرفة بأنواع البن وتقنيات التحضير",
+    "barista_li3": "• نظافة وتنظيم مكان العمل",
+    "barista_li4": "• أسلوب تعامل ودود مع العملاء",
+    "barista_li5": "• تدريب على أنظمة الطلب والدفع",
+
+    // Nail
+    "NAIL_title": "فنيات الأظافر",
+    "NAIL_desc": "توفر JOB HUNT فنيات أظافر مبدعات وذوات خبرة للعمل في الصالونات والمنتجعات ومراكز العناية الشخصية. نقدم فنيات يتميزن بـ:",
+    "NAIL_li1": "• تدريب محترف في المانيكير والباديكير وتزيين الأظافر",
+    "NAIL_li2": "• معرفة قوية بمعايير النظافة والتعقيم",
+    "NAIL_li3": "• مهارات تواصل ممتازة مع العملاء",
+    "NAIL_li4": "• الصبر والدقة في العناية بالأظافر",
+    "NAIL_li5": "• اطلاع دائم على أدوات وتقنيات التجميل الحديثة",
+
+    // Hair
+    "HAIR_title": "عاملة صالون شعر",
+    "HAIR_desc": "يضم طاقمنا عاملات في صالونات التجميل بما في ذلك مصففات الشعر والمساعدات المحترفات للعمل في الفنادق والصالونات. نقدم موظفات يتمتعن بـ:",
+    "HAIR_li1": "• مهارات في القص والتصفيف والصبغة والعناية بالشعر",
+    "HAIR_li2": "• معرفة بأنواع الشعر المختلفة والثقافات",
+    "HAIR_li3": "• نظافة وتنظيم مكان العمل",
+    "HAIR_li4": "• لطف في التعامل وإتقان اللغة الإنجليزية",
+    "HAIR_li5": "• حاصلات على شهادات من مدارس تجميل معتمدة",
+
+    // Massage
+    "MASSAGE": "أخصائي تدليك",
+    "beauty_desc": "نقدم أخصائيي تدليك مؤهلين تدريباً رسمياً ونهجاً مهنياً لطيفاً للعمل في المنتجعات والمراكز الصحية. أخصائيونا:",
+    "MASSAGE_li1": "• مدربون على تقنيات مثل السويدي والأنسجة العميقة والرفلكسولوجي",
+    "MASSAGE_li2": "• فهم تشريحي دقيق ونقاط الضغط",
+    "MASSAGE_li3": "• الاحترافية والحفاظ على السرية",
+    "MASSAGE_li4": "• خلق بيئة مريحة وهادئة للعميل",
+    "MASSAGE_li5": "• معتمدون ويتبعون معايير النظافة والسلامة",
+    "resto_tab": "موظفو المطاعم والمقاهي",
+    "Beauty_tab": "خدمات التجميل والعناية",
 
   }
 };

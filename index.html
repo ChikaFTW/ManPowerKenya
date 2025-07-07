@@ -5,6 +5,8 @@
 <!-- Translations -->
 <script src="assets/translations/translations.js"></script>
 <script src="assets/js/i18n.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider-min.js"></script>
 
 <!-- RTL CSS -->
 <style>
@@ -57,6 +59,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+     <link rel="shortcut icon" href="assets/images/favicon1.jpg">
   </head>
 
  
@@ -142,32 +145,6 @@
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">
           <!-- Item -->
-          <div class="item item-1">
-            <div class="img-fill">
-                <div class="text-content">
-                  <h6 data-i18n="welcome">we are ready to help you</h6>
-                   <h4 data-i18n="guard_services">GUARD SERVICES</h4>
-                 <p data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE  </p> 
-                 <br>
-  <a href="services.html" class="filled-button" ><span data-i18n="our_services">our services</span> </a>
-</div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item item-2">
-            <div class="img-fill">
-                <div class="text-content">
-                  <h6 data-i18n="slider_2_1">we are here to support you</h6>
-                  <h4 data-i18n="slider_2_2" >SECURITY CONTROL<br>&amp; ROOM OPERATOR</h4>
-                  <p data-i18n="slider_2_3" >There may be several duties and responsibilities of security control room operator</p>
-                  <br>
-                  <a href="services.html" class="filled-button"> <span data-i18n="slider_2_4"> our services </span></a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content">
@@ -193,6 +170,33 @@
             </div>
           </div>
           <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="welcome">we are ready to help you</h6>
+                   <h4 data-i18n="guard_services">GUARD SERVICES</h4>
+                 <p data-i18n="right_people" >RIGHT PEOPLE IN THE RIGHT PLACE  </p> 
+                 <br>
+  <a href="services.html" class="filled-button" ><span data-i18n="our_services">our services</span> </a>
+</div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6 data-i18n="slider_2_1">we are here to support you</h6>
+                  <h4 data-i18n="slider_2_2" >SECURITY CONTROL<br>&amp; ROOM OPERATOR</h4>
+                  <p data-i18n="slider_2_3" >There may be several duties and responsibilities of security control room operator</p>
+                  <br>
+                  <a href="services.html" class="filled-button"> <span data-i18n="slider_2_4"> our services </span></a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          
            <!-- Item -->
           <div class="item item-5">
             <div class="img-fill">
@@ -234,19 +238,21 @@
               <span data-i18n="your_success partner" >your success partner</span>
             </div>
           </div>
+        
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/securityserv.jpg" alt="">
+              <img src="assets/images/nursehijab.jpg" alt="">
               <div class="down-content">
-                <h4 data-i18n="security_service" >Security</h4>
-                <p data-i18n="security_service_1" >We provide comprehensive security services to protect your assets and personnel to the highest standards.</p>
+                <h4 data-i18n="nurse_service" >Nurses</h4>
+                <p data-i18n="nurse_service_1" >We supply qualified nurses who are dedicated, compassionate, and globally prepared to work in hospitals, elderly care homes, private homes, and health institutions.</p>
                 <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
               </div>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/Housekeeping.jpg" alt="">
+              <img src="assets/images/Housemaid.jpeg" alt="">
               <div class="down-content">
                 <h4 data-i18n="housekeeping_service" >Housekeeping</h4>
                 <p data-i18n="housekeeping_service_1" >Our qualified team offers complete cleaning services for homes and offices at competitive prices.</p>
@@ -254,17 +260,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-item">
-              <img src="assets/images/healthcareservice.jpg" alt="">
-              <div class="down-content">
-                <h4 data-i18n="healthcare_service" >Healthcare</h4>
-                <p data-i18n="healthcare_service_1" >We provide qualified nurses and caregivers to deliver the best home health services.</p>
-                <a href="services.html" class="filled-button"> <span data-i18n="healthcare_service_2" > Read More </span> </a>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-4">
+                     <div class="col-md-4">
             <div class="service-item">
               <img src="assets/images/driver1.jpg" alt="">
               <div class="down-content">
@@ -274,6 +270,79 @@
               </div>
             </div>
           </div>
+<!-- no translation no modifications -->
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/barista.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="Waiters_services_title" >Waiters &amp; Waitresses</h4>
+                <p data-i18n="Waiters_services" >We provides highly trained and customer-oriented waitresses ready to serve in hotels, restaurants, resorts, and catering events worldwide.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/barista2.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="barista_service" >Barista</h4>
+                <p data-i18n="barista_service_1" >Our baristas are passionate about coffee and customer service. Carefully selected by JOB HUNT, they are trained to create a memorable experience in cafes, hotels, and specialty coffee shops.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/nailtechnicien1.jfif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="nail_service" >NAIL TECHNICIANS</h4>
+                <p data-i18n="nail_service_1" >JOB HUNT supplies nail technicians who are creative, detail-oriented, and certified in beauty and wellness care. Our technicians are equipped to work in salons, spas, and personal care services abroad.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/hairsalon1.jfif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="hair_service" >HAIR SALON WORKER</h4>
+                <p data-i18n="hair_service_1" >Our hair salon workers include hairstylists, assistants, and beauty care professionals capable of working in salons, hotels, and wellness centers. </p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/massage12.jfif" alt="">
+              <div class="down-content">
+                <h4 data-i18n="massage_service" >MASSAGE WORKER</h4>
+                <p data-i18n="massage_service_1" >we deliver massage therapists with formal training and a gentle, professional approach. They are ready to work in spas, wellness clinics, resorts, and healthcare settings abroad.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/securityserv.jpg" alt="">
+              <div class="down-content">
+                <h4 data-i18n="security_service" >Security</h4>
+                <p data-i18n="security_service_1" >We provide comprehensive security services to protect your assets and personnel to the highest standards.</p>
+                <a href="services.html" class="filled-button"><span data-i18n="security_service_2" >Read More </span> </a>
+              </div>
+            </div>
+          </div>
+          <!-- end nno translatons new services added sprint 2 -->
+
+
+
+
         </div>
       </div>
     </div>
