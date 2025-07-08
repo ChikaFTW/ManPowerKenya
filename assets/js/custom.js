@@ -180,6 +180,43 @@ jQuery( document ).ready(function( $ ) {
   });
 
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+
+    if (hash) {
+      // Check if target is inside a tab (like #barista inside #tabs-5)
+      const targetElement = document.querySelector(hash);
+
+      // Find the closest tab container (e.g. tabs-5) if inside one
+      const parentTab = targetElement ? targetElement.closest("article") : null;
+
+      if (parentTab) {
+        // Open the parent tab first
+        const parentTabId = "#" + parentTab.id;
+        const tabLink = document.querySelector(`a[href='${parentTabId}']`);
+        if (tabLink) tabLink.click();
+
+        // Scroll after short delay to ensure tab content is visible
+        setTimeout(() => {
+          const offset = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+          });
+        }, 200);
+      } else {
+        // Fallback: scroll to full tab directly
+        const fullTab = document.querySelector(hash);
+        if (fullTab) {
+          const offset = fullTab.getBoundingClientRect().top + window.scrollY - 100;
+          window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+          });
+        }
+      }
+    }
+  });
 
 
 
