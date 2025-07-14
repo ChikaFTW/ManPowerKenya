@@ -222,13 +222,24 @@ jQuery( document ).ready(function( $ ) {
 
   // Configuration
 const config = {
-    appId: '4f766f0f', // Replace with your actual App ID
-    appKey: '423697dcc76a00622c6c9c7323745e42', // Replace with your actual App Key
+    appId: '4f766f0f', // Keep your actual App ID
+    appKey: '423697dcc76a00622c6c9c7323745e42', // Keep your actual App Key
     baseUrl: 'https://api.adzuna.com/v1/api/jobs',
-    defaultCountry: 'sa',
-    resultsPerPage: 6,
-    defaultKeywords: 'developer'
+    defaultCountry: 'za', // Change as default from the selec
+    resultsPerPage: 4,
+    defaultKeywords: '',
+    categoryMappings: {
+        'healthcare': 'healthcare',
+        'transport-logistics': 'transport-logistics',
+        'security': 'security',
+        'beauty': 'beauty',
+        'domestic-help-cleaning': 'domestic-help-cleaning',
+        'hospitality-catering': 'hospitality-catering',
+        'construction': 'construction'
+    }
+    
 };
+
 
 // State management
 let currentPage = 1;
@@ -254,8 +265,8 @@ async function fetchJobs() {
     const keywords = elements.keywordsInput.value || config.defaultKeywords;
     const location = elements.locationInput.value;
     const category = elements.categorySelect.value;
-    
     const endpoint = `${config.baseUrl}/${country}/search/${currentPage}`;
+
     
     let params = new URLSearchParams({
         app_id: config.appId,
@@ -267,15 +278,22 @@ async function fetchJobs() {
     if (location) params.append('where', location);
     if (category) params.append('category', category);
     
-    try {
+     try {
         showLoading(true);
         const response = await fetch(`${endpoint}?${params.toString()}`);
         
-        if (!response.ok) {
-            throw new Error(`API request failed with status ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`API request failed with status ${response.status}`);
         
         const data = await response.json();
+        
+        // Fix pagination when no results
+        if (!data.results || data.results.length === 0) {
+            totalPages = 1;
+            currentPage = 1;
+            updatePagination();
+            return { results: [] };
+        }
+        
         totalPages = Math.ceil(data.count / config.resultsPerPage);
         updatePagination();
         return data;
@@ -302,7 +320,7 @@ function displayJobs(jobs) {
         return;
     }
     
-    jobs.results.forEach(job => {
+        jobs.results.forEach(job => {
         const jobCard = document.createElement('div');
         jobCard.className = 'job-card';
         
@@ -347,6 +365,7 @@ function formatSalary(amount) {
     }).format(amount).replace(/^[A-Z]+\s/, ''); // Remove currency prefix if any
 }
 
+
 function truncateDescription(text, maxLength) {
     if (!text) return '';
     if (text.length <= maxLength) return text;
@@ -382,14 +401,16 @@ function updatePagination() {
 elements.searchButton.addEventListener('click', async () => {
     currentPage = 1;
     const jobs = await fetchJobs();
-    displayJobs(jobs);
+    const recentJobs = filterRecentJobs(jobs.results || []);
+    displayJobs({ results: recentJobs });
 });
 
 elements.prevPageButton.addEventListener('click', async () => {
     if (currentPage > 1) {
         currentPage--;
         const jobs = await fetchJobs();
-        displayJobs(jobs);
+        const recentJobs = filterRecentJobs(jobs.results || []);
+        displayJobs({ results: recentJobs });
     }
 });
 
@@ -397,24 +418,29 @@ elements.nextPageButton.addEventListener('click', async () => {
     if (currentPage < totalPages) {
         currentPage++;
         const jobs = await fetchJobs();
-        displayJobs(jobs);
+        const recentJobs = filterRecentJobs(jobs.results || []);
+        displayJobs({ results: recentJobs });
     }
 });
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', async () => {
-    // Set default country if available
-    if (navigator.language) {
-        const userCountry = navigator.language.split('-')[1]?.toLowerCase();
-        if (userCountry && elements.countrySelect.querySelector(`option[value="${userCountry}"]`)) {
-            elements.countrySelect.value = userCountry;
-        }
-    }
-    
-    // Load initial jobs
+    const defaultCountry = elements.countrySelect.value;
+    currentPage = 1;
     const jobs = await fetchJobs();
-    displayJobs(jobs);
+    const recentJobs = filterRecentJobs(jobs.results || []);
+    displayJobs({ results: recentJobs });
 });
+
+function filterRecentJobs(jobsArray) {
+    const today = new Date();
+    const sixtyDaysAgo = new Date();
+    sixtyDaysAgo.setDate(today.getDate() - 60);
+    return jobsArray.filter(job => {
+    const jobDate = new Date(job.created);
+    return jobDate >= sixtyDaysAgo;
+    });
+}
 
 
 // end Adzuna 
@@ -435,11 +461,9 @@ async function fetchJobsWithCache() {
         category: elements.categorySelect.value,
         page: currentPage
     });
-    
     if (cache.data && cache.timestamp && (now - cache.timestamp) < cache.ttl) {
         return cache.data;
     }
-    
     const data = await fetchJobs();
     cache.data = data;
     cache.timestamp = now;
@@ -447,6 +471,52 @@ async function fetchJobsWithCache() {
 }
 // end cashing adzuna and """"  future local storage under it 
 
+// add form clear to the form logic
+document.addEventListener("DOMContentLoaded", function () {
+  const forms = document.querySelectorAll('form[action="https://formbold.com/s/3w2Wk"]');
+
+  forms.forEach(form => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const button = form.querySelector("button[type='submit']");
+      const originalText = button.innerHTML;
+
+      // Show loading spinner
+      button.disabled = true;
+      button.innerHTML = `<span class="loader"></span> Sending...`;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+          button.innerHTML = "✅ Message Sent!";
+          button.classList.add('success');
+        } else {
+          button.innerHTML = "❌ Failed to send.";
+        }
+      } catch (error) {
+        button.innerHTML = "❌ Error occurred.";
+      }
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        button.classList.remove('success');
+      }, 3000);
+    });
+  });
+});
 
 
+// end 
 
