@@ -630,7 +630,7 @@ header .navbar {
 	font-size: 16px;
 }
 #navbarResponsive {
-	z-index: 999;
+	z-index: 99999;
 }
 .navbar-collapse {
 	text-align: center;
@@ -1991,3 +1991,43 @@ button.success {
   color: white !important;
 }
 
+/* top arrow */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #a4c639;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 14px;
+  border-radius: 50%;
+  text-align: center;
+  display: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #88a823;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 15px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 15px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
