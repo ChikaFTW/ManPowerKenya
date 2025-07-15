@@ -6,7 +6,7 @@
 <script src="assets/translations/translations.js"></script>
 <script src="assets/js/i18n.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider-min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/flexslider/jquery.flexslider-min.js"></script> 
 
 <!-- RTL CSS -->
 <style>
@@ -52,7 +52,7 @@
     <meta name="author" content="Chikaa">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <title>JOBS HUNT</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -132,15 +132,16 @@
               <!-- <li class="nav-item">
                 <a class="nav-link" href="one-page.html"><span data-i18n="onepage_nav">One Page</span></a>
               </li> -->
-              <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
-       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      English
-    </a>
-    <div class="dropdown-menu" aria-labelledby="languageDropdown">
-      <a class="dropdown-item language-option active" href="#" data-lang="en">English</a>
-      <a class="dropdown-item language-option" href="#" data-lang="fr">Français</a>
-      <a class="dropdown-item language-option" href="#" data-lang="ar">العربية</a>
+              <li class="nav-item dropdown"> 
+      <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        English 
+      </a>
+
+    
+      <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item language-option active" href="#" data-lang="en"> English  </a>
+      <a class="dropdown-item language-option" href="#" data-lang="fr"> Français</a>
+      <a class="dropdown-item language-option" href="#" data-lang="ar"> العربية </a>
     </div>
   </li>
             </ul>
@@ -703,18 +704,5 @@ WORKING WITH YOU. </p>
           }
       }
     </script>
-
-<!-- Register service worker-->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(function(reg) {
-        console.log('✅ Service Worker registered.', reg.scope);
-      })
-      .catch(function(error) {
-        console.error('❌ Service Worker registration failed:', error);
-      });
-  }
-</script>
   </body>
 </html>

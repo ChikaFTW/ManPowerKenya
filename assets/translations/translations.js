@@ -305,6 +305,17 @@ const translations = {
     "resto_tab": "Restaurant & Coffee Staff",
     "Beauty_tab": "Beauty & Wellness Services",
     "findjob_button":"Find Jobs",
+    "section.philippines": "Philippine Services",
+    "service.skilled_worker.title": "Provide Skilled Worker",
+    "service.skilled_worker.desc": "We offer a wide range of manpower solutions, including both skilled and non-skilled workers. Our pool includes professionals from mechanical and technical fields, hospitality (such as baristas and restaurant staff), and qualified hospital nurses.",
+    "service.job_order.title": "Approve Skilled Job Order",
+    "service.job_order.desc": "We facilitate the approval of skilled job orders through official channels including the Philippine Overseas Labor Office (POLO) and the Department of Migrant Workers (DMW) in Riyadh.",
+    "service.nurse_license.title": "Nurses with Saudi License",
+    "service.nurse_license.desc": "We specialize in providing licensed Filipino nurses who are authorized to practice in Saudi Arabia, whether first-time applicants or experienced professionals.",
+    "service.licensed_agency.title": "Provide Philippines Licensed Agencies",
+    "service.licensed_agency.desc": "We partner only with government-accredited agencies in the Philippines that are officially listed by the DMW for ethical and legal recruitment.",
+    "service.reentry.title": "R-Entry Contract + E-Travel Assistance",
+    "service.reentry.desc": "For returning workers going on vacation, we process Re-Entry Contracts and assist with E-Travel to ensure a seamless return to Saudi Arabia without the need for a new visa.",
     
 
   },
@@ -627,6 +638,18 @@ const translations = {
      "resto_tab": "Personnel de Restaurant & Café",
     "Beauty_tab": "Services de Beauté et Bien-être",
     "findjob_button":"Trouver des emplois",
+    "section.philippines": "Services Philippins",
+    "service.skilled_worker.title": "Fourniture de travailleurs qualifiés",
+    "service.skilled_worker.desc": "Nous proposons des solutions de main-d'œuvre qualifiée et non qualifiée dans les domaines techniques, mécaniques, hospitaliers et hôteliers (restaurants, cafés, etc.).",
+    "service.job_order.title": "Approbation de l'ordre de mission qualifié",
+    "service.job_order.desc": "Nous facilitons l’approbation des ordres de mission avec le POLO et le DMW de l’ambassade des Philippines à Riyad.",
+    "service.nurse_license.title": "Infirmières avec licence saoudienne",
+    "service.nurse_license.desc": "Nous fournissons des infirmières philippines titulaires d'une licence saoudienne, qu'elles soient débutantes ou expérimentées.",
+    "service.licensed_agency.title": "Fourniture d'agences licenciées aux Philippines",
+    "service.licensed_agency.desc": "Nous collaborons uniquement avec des agences agréées figurant sur la liste blanche du DMW pour un recrutement éthique.",
+    "service.reentry.title": "Contrat de retour + assistance e-travel",
+    "service.reentry.desc": "Pour les travailleurs domestiques ayant terminé deux ans de service, nous gérons leur contrat de retour et les documents e-travel pour un retour sans nouveau visa.",
+
     
   },
 
@@ -943,6 +966,18 @@ const translations = {
     "resto_tab": "موظفو المطاعم والمقاهي",
     "Beauty_tab": "خدمات التجميل والعناية",
     "findjob_button": "ابحث عن وظائف",
+    "section.philippines": "خدمات الفلبين",
+    "service.skilled_worker.title": "توفير عمالة ماهرة",
+    "service.skilled_worker.desc": "نقدم حلول توظيف شاملة تشمل العمالة الماهرة وغير الماهرة في المجالات الفنية، الميكانيكية، الضيافة (كالمطاعم والمقاهي) والتمريض.",
+    "service.job_order.title": "الموافقة على أمر التوظيف",
+    "service.job_order.desc": "نسهل الموافقة على أوامر التوظيف من خلال السفارة الفلبينية في الرياض عبر POLO وDMW.",
+    "service.nurse_license.title": "ممرضات برخصة سعودية",
+    "service.nurse_license.desc": "نوفر ممرضات من الفلبين حاصلات على ترخيص سعودي، سواء للمرّة الأولى أو ذوات الخبرة.",
+    "service.licensed_agency.title": "توفير وكالات مرخصة فلبينية",
+    "service.licensed_agency.desc": "نتعامل فقط مع وكالات مرخصة رسمياً من الحكومة الفلبينية ومُدرجة ضمن القائمة البيضاء لدى DMW.",
+    "service.reentry.title": "عقد العودة + المساعدة في e-travel",
+    "service.reentry.desc": "للخادمات العائدات بعد إجازة، نقوم بإعداد عقد العودة والمساعدة في e-travel للعودة إلى السعودية بدون الحاجة إلى تأشيرة جديدة.",
+
 
   }
 };

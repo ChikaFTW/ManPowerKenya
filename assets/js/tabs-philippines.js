@@ -22,3 +22,27 @@ document.addEventListener("DOMContentLoaded", function () {
     tabLinks[0].click();
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.tab-button');
+  const panes = document.querySelectorAll('.tab-pane');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-tab');
+
+      // Toggle buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Toggle content
+      panes.forEach(pane => {
+        pane.classList.remove('active');
+        if (pane.id === target) {
+          pane.classList.add('active');
+        }
+      });
+    });
+  });
+});
+

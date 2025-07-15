@@ -26,6 +26,10 @@ ManPower Kenya
   font-weight: 500; /* Optional: makes Arabic text slightly bolder */
   letter-spacing: 0.5px;
 }
+[dir="rtl"] .nav-item.dropdown .nav-link {
+  font-size: 1.2rem;
+}
+
 
 [dir="rtl"] .dropdown-menu {
   font-size: 1rem;
@@ -39,10 +43,18 @@ ManPower Kenya
   direction: rtl;
 }
 
+[dir="rtl"] .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1.5rem;
+  direction: rtl;
+}
+
+
 [dir="rtl"] .dropdown-toggle::after {
   margin-left: 0;
   margin-right: 0.255em; /* Adjust caret position for RTL */
 }
+
+
 
 [dir="rtl"] .left-info {
   float: right !important;
