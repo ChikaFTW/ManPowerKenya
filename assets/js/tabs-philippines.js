@@ -21,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Trigger the first tab on load
     tabLinks[0].click();
   }
+  document.addEventListener("DOMContentLoaded", function () {
+  const savedLang = localStorage.getItem("lang") || "en";
+  document.documentElement.lang = savedLang;
+  document.documentElement.dir = (savedLang === "ar") ? "rtl" : "ltr";
+});
 
   // SERVICE TABS WITH .tab-button AND .tab-pane
   const buttons = document.querySelectorAll('.tab-button');

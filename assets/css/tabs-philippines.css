@@ -153,7 +153,7 @@
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
-  direction: ltr; /* fallback for LTR */
+  direction: ltr;
 }
 
 html[dir="rtl"] .services-section {
@@ -224,20 +224,58 @@ html[dir="rtl"] .services-section {
   animation: popIn 0.6s ease;
 }
 
+/* ✅ Unified paragraph style */
 .tab-pane p {
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.7;
-  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin: 30px 0 15px;
+  color: #393939;
+  direction: inherit;
   text-align: start;
 }
 
+/* ✅ Unified UL + LI style */
+.tab-pane ul {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-inline-start: 20px;
+  color: #393939;
+  direction: inherit;
+  text-align: start;
+}
+
+.tab-pane ul li {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #000;
+  direction: inherit;
+  text-align: start;
+}
+
+/* ✅ RTL Overrides */
+html[dir="rtl"] .tab-pane,
 html[dir="rtl"] .tab-pane p,
 html[dir="rtl"] .tab-pane ul,
 html[dir="rtl"] .tab-pane li {
-  text-align: right;
-  direction: rtl;
+   text-align: right !important;
+  direction: rtl !important;
 }
+
+html[dir="rtl"] .tab-pane ul {
+  padding-inline-start: 0;
+  padding-inline-end: 20px;
+}
+
+html[dir="rtl"] p {
+  text-align: right !important;
+}
+
+
+
+
 
 
 
@@ -318,45 +356,7 @@ html[dir="rtl"] .service-list-filipino {
 }
 
 
-/* Base styles */
-.tab-pane p {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.25px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #393939;
-  direction: inherit;
-  text-align: start;
-  font-family: 'Segoe UI', sans-serif;
-}
 
-.tab-pane ul {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding-inline-start: 20px; /* works for LTR and RTL */
-  color: #393939;
-  direction: inherit;
-  text-align: start;
-   font-family: 'Segoe UI', sans-serif;
-}
-
-.tab-pane ul li {
-  font-size: 1.0rem;
-  font-weight: 700;
-  letter-spacing: 0.25px;
-  margin-bottom: 10px;
-  color: #000000;
-  direction: inherit;
-  text-align: start;
-   font-family: 'Segoe UI', sans-serif;
-}
-
-/* RTL-specific override (optional but helpful) */
-html[dir="rtl"] .tab-pane ul {
-  padding-inline-start: 0;
-  padding-inline-end: 20px;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" >
 
 <head>
   <!-- Translations & RTL CSS -->
@@ -105,8 +105,8 @@
     </div>
     <div class="slide" style="background-image: url('assets/images/flag-philippines.jpg');">
       <div class="slider-content">
-        <h2 data-i18n="ph_slide2_title">Licensed Agencies</h2>
-        <p data-i18n="ph_slide2_desc">Smooth & transparent partnership</p>
+        <h2 data-i18n="ph_slide3_title">Licensed Agencies</h2>
+        <p data-i18n="ph_slide3_desc">Smooth & transparent partnership</p>
       </div>
     </div>
   </section>
@@ -139,24 +139,41 @@
     </div>
 
     <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                  <img src="assets/images/filipinoSkilledworker.jpg" alt="Skilled Worker Icon">
-<p data-i18n="service_skilled_worker_desc_11">We are pleased to assist you in sourcing highly skilled Filipino workers to meet your staffing requirements. Our process involves carefully understanding your specific job orders and matching them with qualified professionals from the Philippines, known for their exceptional work ethic, technical expertise, and adaptability.</p>
-          <ul class="service-list-filipino" data-i18n="service_skilled_worker_desc_1">Our Service Includes:
-          <li data-i18n="service_skilled_worker_desc_11_2" > • Comprehensive Candidate Screening: We conduct thorough assessments to ensure candidates possess the necessary skills, experience, and certifications relevant to your industry.</span></li>
-          <li data-i18n="service.skilled_worker.desc3" >• Compliance & Documentation: We handle all necessary paperwork, including work permits, visas, and employment contracts, ensuring adherence to legal and regulatory standards.</li>
-          <li data-i18n="service.skilled_worker.desc4" >• Skill Verification: We validate the proficiency and credentials of each candidate to guarantee quality and reliability.</li>
-          <li data-i18n="service.skilled_worker.desc5" >• Customized Job Matching: We tailor our search to align with your specific job descriptions, company culture, and project needs.</li>
-          </ul>
 
-        
-          <p data-i18n="service.skilled_worker.desc6" >Partnering with Filipino skilled workers offers numerous advantages such as high productivity, excellent communication skills, and a strong work ethic.</p>
-          <p data-i18n="service.skilled_worker.desc7" >We are committed to providing you with dependable talent that can contribute effectively to your business operations. Please feel free to contact us for more details or to discuss your specific requirements.</p>
+<div class="tab-pane active" id="tab1">
+  <img src="assets/images/filipinoSkilledworker.jpg" alt="Skilled Worker Icon">
+
+  <p data-i18n="skilled_worker.intro">
+    We are pleased to assist you in recruiting highly skilled Filipino workers to meet your staffing needs. Our process involves understanding your specific job orders and matching them with qualified professionals from the Philippines, known for their strong work ethic, technical expertise, and adaptability.
+  </p>
+
+  <p data-i18n="skilled_worker.service_title">Our Service Includes:</p>
+
+  <ul class="service-list-filipino">
+    <li data-i18n="skilled_worker.service_1">
+      • Comprehensive Candidate Screening: We conduct thorough assessments to ensure candidates possess the necessary skills, experience, and certifications relevant to your industry.
+    </li>
+    <li data-i18n="skilled_worker.service_2">
+      • Compliance & Documentation: We handle all necessary paperwork, including work permits, visas, and employment contracts, ensuring adherence to legal and regulatory standards.
+    </li>
+    <li data-i18n="skilled_worker.service_3">
+      • Skill Verification: We validate the proficiency and credentials of each candidate to guarantee quality and reliability.
+    </li>
+    <li data-i18n="skilled_worker.service_4">
+      • Customized Job Matching: We tailor our search to align with your specific job descriptions, company culture, and project needs.
+    </li>
+  </ul>
+
+  <p data-i18n="skilled_worker.advantages">
+    Partnering with Filipino skilled workers offers numerous advantages such as high productivity, excellent communication skills, and a strong work ethic.
+  </p>
+
+  <p data-i18n="skilled_worker.conclusion">
+    We are committed to providing you with dependable talent that can contribute effectively to your business operations. Please feel free to contact us for more details or to discuss your specific requirements.
+  </p>
+</div>
 
 
-
-                  
-                </div>
                 <div class="tab-pane" id="tab2">
                   <img src="assets/images/FilipinoJo.jpg" alt="Job Order Icon">
                   <p data-i18n="service.job_order.desc">Thank you for considering our services to support your workforce needs. We are pleased to assist you in the approval and processing of skilled job orders for Filipino manpower. Our experienced team ensures that each job order is thoroughly reviewed and complies with both Philippine and destination country labor regulations. We coordinate closely with accredited agencies and the Philippine Overseas Employment Administration (POEA) to validate documentation, verify job details, and secure timely approvals. Our priority is to streamline the process for you while upholding transparency, legal compliance, and the highest standards of professionalism. Whether your job order involves technical, construction, or specialized skilled roles, we are here to ensure a smooth and efficient approval journey. Please feel free to reach out with any specific requirements or inquiries — your success is our commitment.</p>
@@ -362,6 +379,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script>
+<script>
+  function applyLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+    // Optional: load translation.js data
+    // loadTranslation(lang);
+  }
+
+  // Auto-detect or set default language (for example, from localStorage or query param)
+  const userLang = localStorage.getItem('lang') || 'en';
+  applyLanguage(userLang);
 </script>
 
     
