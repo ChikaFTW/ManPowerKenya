@@ -1,3 +1,15 @@
+#filipinonavbar{
+  background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  backdrop-filter: blur(20px); /* Glass blur effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  color: #000; /* Text color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle bottom border */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 /* philipines css */
 .philippines-tabs-container {
   background-color: #f4f8ff;
@@ -12,38 +24,6 @@
   direction: rtl;
 }
 
-/* Tab Buttons */
-.philippines-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-
-.philippines-tabs li {
-  list-style: none;
-}
-
-.philippines-tabs li a {
-  display: inline-block;
-  padding: 12px 22px;
-  background-color: #ffffff;
-  color: #007bff;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.philippines-tabs li a:hover,
-.philippines-tabs li.active a {
-  background-color: #007bff;
-  color: #ffffff;
-  transform: scale(1.05);
-}
 
 /* Content Area */
 .philippines-content {
@@ -76,7 +56,7 @@
 /* Paragraphs */
 .philippines-content p {
   font-size: 15px;
-  color: #6c757d;
+  color: #22649e;
   line-height: 1.6;
   margin-bottom: 10px;
 }
@@ -155,34 +135,17 @@
       position: absolute;
       bottom: 40px;
       left: 10%;
-      color: #fff;
+      color: #ffffff;
       background: rgba(0, 0, 0, 0.5);
       padding: 20px;
       border-radius: 10px;
-    }
-    .info-section {
-      padding: 60px 0;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    .info-card {
-      display: inline-block;
-      width: 250px;
-      margin: 20px;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-    .info-card img {
-      width: 60px;
-      margin-bottom: 15px;
-    }
-    .info-card h3 {
-      margin-bottom: 10px;
+       
     }
 
-
+    .slider-content p {
+      color: #ffffff;
+     
+    }
     /* service section */
 .services-section {
   padding: 60px 20px;
@@ -269,9 +232,16 @@ html[dir="rtl"] .services-section {
   text-align: start;
 }
 
-html[dir=\"rtl\"] .tab-pane p {
-  text-align: end;
+html[dir="rtl"] .tab-pane p,
+html[dir="rtl"] .tab-pane ul,
+html[dir="rtl"] .tab-pane li {
+  text-align: right;
+  direction: rtl;
 }
+
+
+
+
 
 /* Animations */
 @keyframes fadeSlide {
@@ -308,10 +278,6 @@ html[dir=\"rtl\"] .tab-pane p {
     min-width: auto;
   }
 
-  .tab-pane p {
-    font-size: 1rem;
-  }
-
   .tab-pane img {
     max-width: 90%;
   }
@@ -338,4 +304,79 @@ html[dir=\"rtl\"] .tab-pane p {
   }
 }
 
+.service-list-filipino {
+  text-align: start;        /* Aligns left in LTR, right in RTL */
+  padding-inline-start: 20px;
+  direction: inherit;       /* Follows document or parent direction */
+}
 
+/* Optional: Adjust list style depending on direction */
+html[dir="rtl"] .service-list-filipino {
+  list-style-position: inside;
+  padding-inline-start: 0;
+  padding-inline-end: 20px;
+}
+
+
+/* Base styles */
+.tab-pane p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #393939;
+  direction: inherit;
+  text-align: start;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tab-pane ul {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-inline-start: 20px; /* works for LTR and RTL */
+  color: #393939;
+  direction: inherit;
+  text-align: start;
+   font-family: 'Segoe UI', sans-serif;
+}
+
+.tab-pane ul li {
+  font-size: 1.0rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #000000;
+  direction: inherit;
+  text-align: start;
+   font-family: 'Segoe UI', sans-serif;
+}
+
+/* RTL-specific override (optional but helpful) */
+html[dir="rtl"] .tab-pane ul {
+  padding-inline-start: 0;
+  padding-inline-end: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tab-pane p,
+  .tab-pane ul {
+    font-size: 0.85rem;
+  }
+
+  .tab-pane ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-pane p,
+  .tab-pane ul {
+    font-size: 0.8rem;
+  }
+
+  .tab-pane ul li {
+    font-size: 0.95rem;
+  }
+}
